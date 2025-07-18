@@ -1,2 +1,9 @@
 venv/
 __pycache__/
+
+
+instance/
+data/
+
+
+.DS_Store
