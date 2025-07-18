@@ -1,0 +1,645 @@
+Customer,Serving Date,Item,Meal,Day,Portion Size grams or each,Order Amount,Quantity to Produce/Ship,Client,Frozen,Chilled,Shipment Date
+Curlew,19/Jun/25,2% Milk Sleeve,Beverage,4,1,3,3,,,x,19/Jun/25
+Curlew,16/Jun/25,Apple,Lunch,1,1,40,40,,,x,16/Jun/25
+MIYM,24/Jun/25,Apple,Lunch,,0.5,8,4,,,x,23/Jun/25
+Westover,27/Jun/25,Apple,Breakfast,2,0.5,43,21.5,,,x,23/Jun/25
+Westover,2/Jul/25,Apple,Breakfast,7,0.5,43,21.5,,,x,23/Jun/25
+Ying's,24/Jun/25,Apple,Lunch,,0.5,6,4,,,x,23/Jun/25
+Curlew,20/Jun/25,Apple,PM Snack,5,1,35,35,,,x,20/Jun/25
+MIYM,30/Jun/25,Apple,Snack,,0.5,8,4,,,x,23/Jun/25
+Westover,26/Jun/25,Apple Crumble,Lunch Dessert,1,1,42,42,,x,,23/Jun/25
+Westover,2/Jul/25,Apple Crumble,Dinner Dessert,7,1,42,42,,x,,23/Jun/25
+Aurora CHATS,16/Jun/25,Applesauce,Lunch,,1,23,23,,,x,16/Jun/25
+Bradford CHATS,16/Jun/25,Applesauce,Lunch,,1,17,17,,,x,16/Jun/25
+Richmond Hill CHATS,16/Jun/25,Applesauce,Lunch,,1,20,20,,,x,16/Jun/25
+Vaughan CHATS,16/Jun/25,Applesauce,Lunch,,1,30,30,,,x,16/Jun/25
+Curlew,17/Jun/25,Applesauce,AM Snack,2,1,35,35,,,x,16/Jun/25
+Aurora CHATS,17/Jun/25,Applesauce,Lunch R,,1,1,1,"Jackie J. - Peppers, Radish, Melon, Cucumber",,x,16/Jun/25
+Curlew,19/Jun/25,Applesauce,AM Snack,4,1,35,35,,,x,18/Jun/25
+Westover,26/Jun/25,Baby Carrots,Snack,1,42,43,1806,,,x,23/Jun/25
+Westover,28/Jun/25,Baby Carrots,Snack,3,42,24,1008,,,x,23/Jun/25
+Westover,1/Jul/25,Baguette,Breakfast,6,0.2,43,8.6,,,x,23/Jun/25
+Westover,27/Jun/25,Baked Beans,Dinner,2,100,43,4300,,x,,23/Jun/25
+Ying's,25/Jun/25,Baked Beans,Lunch,,75,6,525,,x,,23/Jun/25
+MIYM,25/Jun/25,Baked Beans,Lunch,,75,7,525,,x,,23/Jun/25
+Richmond Hill CHATS,17/Jun/25,Baked Beans,Lunch,,75,0,0,,x,,16/Jun/25
+Bradford CHATS,17/Jun/25,Baked Beans,Lunch,,75,20,1500,,x,,16/Jun/25
+Curlew,17/Jun/25,Baked Beans,Lunch,2,105,40,4200,,,hot,17/Jun/25
+Vaughan CHATS,17/Jun/25,Baked Beans,Lunch,,75,50,3750,,x,,16/Jun/25
+Dovercourt,17/Jun/25,Baked Beans,Dinner,2,100,25,2500,,x,,15/Jun/25
+Macey,17/Jun/25,Baked Beans,Dinner,2,100,25,2500,,x,,15/Jun/25
+Aurora CHATS,17/Jun/25,Baked Beans,Lunch,,75,25,1875,,x,,16/Jun/25
+Westover,29/Jun/25,Banana,Breakfast,4,0.5,43,21.5,,,x,23/Jun/25
+Westover,30/Jun/25,Banana,Snack,5,1,43,43,,,x,23/Jun/25
+Ying's,26/Jun/25,Banana,Lunch,,0.5,6,4.5,,,x,23/Jun/25
+MIYM,26/Jun/25,Banana,Lunch,,0.5,9,4.5,,,x,23/Jun/25
+Curlew,18/Jun/25,Banana,Lunch,3,1,40,40,,,x,18/Jun/25
+Westover,29/Jun/25,Basmati Rice,Dinner,4,140,43,6020,,x,,23/Jun/25
+Macey,18/Jun/25,Basmati Rice,Dinner R,3,140,1,140,122 - Gluten,x,,15/Jun/25
+Ying's,27/Jun/25,Basmati Rice,Lunch,,100,6,800,,x,,23/Jun/25
+Macey,19/Jun/25,Basmati Rice,Dinner,4,140,25,3500,,,,18/Jun/25
+MIYM,27/Jun/25,Basmati Rice,Lunch,,100,8,800,,x,,23/Jun/25
+Richmond Hill CHATS,19/Jun/25,Basmati Rice,Lunch,,100,19,1900,,,,18/Jun/25
+Dovercourt,19/Jun/25,Basmati Rice,Dinner,4,140,25,3500,,,,18/Jun/25
+Curlew,19/Jun/25,Basmati Rice,Lunch,4,105,40,4200,,,Hot,19/Jun/25
+Vaughan CHATS,19/Jun/25,Basmati Rice,Lunch,,100,50,5000,,,,18/Jun/25
+Bradford CHATS,19/Jun/25,Basmati Rice,Lunch,,100,17,1700,,,,18/Jun/25
+Aurora CHATS,19/Jun/25,Basmati Rice,Lunch,,100,22,2200,,x,,18/Jun/25
+Westover,30/Jun/25,BBQ Chicken Tenders,Dinner,5,135,43,5805,,x,,23/Jun/25
+Macey,20/Jun/25,BBQ Chicken Tenders,Dinner,5,135,23,3105,,,,18/Jun/25
+Dovercourt,20/Jun/25,BBQ Chicken Tenders,Dinner,5,135,25,3375,,,,18/Jun/25
+Macey,20/Jun/25,BBQ Vegetarian Meatballs,Dinner R,5,135,1,135,386 - Vegetarian,,,18/Jun/25
+Westover,30/Jun/25,Beef Bolognese Pasta,Lunch,5,250,42,10500,,x,,23/Jun/25
+Westover,27/Jun/25,Beef Burger,Dinner,2,1,42,42,,x,,23/Jun/25
+Richmond Hill CHATS,17/Jun/25,Beef Burger,Lunch,,1,0,0,,,,16/Jun/25
+Bradford CHATS,17/Jun/25,Beef Burger,Lunch,,1,21,21,,,,16/Jun/25
+Curlew,17/Jun/25,Beef Burger,Lunch,2,1,27,27,,,hot,17/Jun/25
+Vaughan CHATS,17/Jun/25,Beef Burger,Lunch,,1,48,48,,,,16/Jun/25
+Dovercourt,17/Jun/25,Beef Burger,Dinner,2,1,25,25,,,,15/Jun/25
+Macey,17/Jun/25,Beef Burger,Dinner,2,1,22,22,,,,15/Jun/25
+Aurora CHATS,17/Jun/25,Beef Burger,Lunch,,1,23,23,,,,16/Jun/25
+Westover,28/Jun/25,Berryccino Mousse,Dinner Dessert,3,1,23,23,,x,,23/Jun/25
+Ying's,26/Jun/25,Bistro Mixed Vegetables,Lunch,,75,6,675,,x,,23/Jun/25
+MIYM,26/Jun/25,Bistro Mixed Vegetables,Lunch,,75,9,675,,x,,23/Jun/25
+Macey,18/Jun/25,Bistro Mixed Vegetables,Dinner,3,100,25,2500,,,,15/Jun/25
+Richmond Hill CHATS,18/Jun/25,Bistro Mixed Vegetables,Lunch,,75,17,1275,,,,16/Jun/25
+Bradford CHATS,18/Jun/25,Bistro Mixed Vegetables,Lunch,,75,21,1575,,,,16/Jun/25
+Dovercourt,18/Jun/25,Bistro Mixed Vegetables,Dinner,3,100,25,2500,,,,15/Jun/25
+Vaughan CHATS,18/Jun/25,Bistro Mixed Vegetables,Lunch,,75,50,3750,,,,16/Jun/25
+Curlew,18/Jun/25,Bistro Mixed Vegetables,Lunch,3,105,40,4200,,,hot,18/Jun/25
+Aurora CHATS,18/Jun/25,Bistro Mixed Vegetables,Lunch,,75,0,0,,,,16/Jun/25
+Westover,29/Jun/25,Breton Crackers,Snack,4,4,42,168,,,x,23/Jun/25
+Westover,2/Jul/25,Breton Crackers,Snack,7,4,42,168,,,x,23/Jun/25
+Westover,30/Jun/25,Broccoli,Dinner,5,100,43,4300,,x,,23/Jun/25
+Macey,20/Jun/25,Broccoli,Dinner,5,100,25,2500,,,,18/Jun/25
+Dovercourt,20/Jun/25,Broccoli,Dinner,5,100,25,2500,,,,18/Jun/25
+Westover,26/Jun/25,Broccoli and Cheese Omelet,Breakfast,1,120,43,5160,,x,,23/Jun/25
+Westover,1/Jul/25,Brownie,Dinner Dessert,6,1,42,42,,x,,23/Jun/25
+Westover,Daily,Butter Pot,Breakfast,Daily,1,282,282,,,x,23/Jun/25
+Westover,27/Jun/25,Butterscotch Pudding,Dinner Dessert R,2,1,1,1,Gluten Free,,x,23/Jun/25
+Westover,27/Jun/25,Butterscotch Pudding,Lunch Dessert,2,1,43,43,,,x,23/Jun/25
+Westover,28/Jun/25,Butterscotch Pudding,Dinner Dessert R,3,1,1,1,Gluten Free,,x,23/Jun/25
+Westover,29/Jun/25,Butterscotch Pudding,Dinner Dessert R,4,1,1,1,Gluten Free,,x,23/Jun/25
+Westover,28/Jun/25,Cantaloupe,Snack,3,0.07,24,1.6,,,x,23/Jun/25
+Richmond Hill CHATS,19/Jun/25,Cantaloupe,Lunch,,0.07,19,1.33,,,,18/Jun/25
+Vaughan CHATS,19/Jun/25,Cantaloupe,Lunch,,0.07,50,3.5,,,,18/Jun/25
+Bradford CHATS,19/Jun/25,Cantaloupe,Lunch,,0.07,17,1.19,,,,18/Jun/25
+Aurora CHATS,19/Jun/25,Cantaloupe,Lunch,,0.07,24,2,,,,18/Jun/25
+Westover,29/Jun/25,Caramel Vanilla Swirl Cake,Lunch Dessert,4,1,42,42,,x,,23/Jun/25
+Westover,29/Jun/25,Celery ,Snack,4,2,43,86,,,x,23/Jun/25
+Curlew,18/Jun/25,Cereal Milk - 2%,AM Snack,3,90,35,3150,,,x,17/Jun/25
+Westover,27/Jun/25,Cheddar Cheese Slice - 14 G,Dinner,2,1,43,43,,,x,23/Jun/25
+Macey,17/Jun/25,Cheddar Cheese Slice - 14 G,Dinner R,2,2,1,2,386 - Vegetarian,,,15/Jun/25
+Dovercourt,17/Jun/25,Cheddar Cheese Slice - 14 G,Dinner,2,1,24,24,,,,15/Jun/25
+Macey,17/Jun/25,Cheddar Cheese Slice - 14 G,Dinner,2,1,23,23,,,,15/Jun/25
+Macey,21/Jun/25,Cheddar Cheese Slice 14g,Lunch R,6,2,1,2,386 - Vegetarian,,,20/Jun/25
+Dovercourt,22/Jun/25,Cheddar Cheese Slice 14g,Lunch,7,2,25,50,,,,20/Jun/25
+Macey,22/Jun/25,Cheddar Cheese Slice 14g,Lunch,7,2,25,50,,,,20/Jun/25
+Curlew,18/Jun/25,Cheerios,AM Snack,3,25,35,875,,,x,17/Jun/25
+Westover,27/Jun/25,Cheese Cubes,Snack,2,35,43,1505,,,x,23/Jun/25
+Westover,30/Jun/25,Cheese Cubes,Snack,5,35,43,1505,,,x,23/Jun/25
+MIYM,24/Jun/25,Cheese Curds,Snack,,35,8,280,,,x,23/Jun/25
+Curlew,16/Jun/25,Cheese Curds,PM Snack,1,35,34,1190,,,x,16/Jun/25
+Westover,27/Jun/25,Cheese Curds,Snack,2,35,43,1505,,,x,23/Jun/25
+Westover,29/Jun/25,Cheese Curds,Snack,4,35,43,1505,,,x,23/Jun/25
+Ying's,25/Jun/25,Chicken Burger,Lunch,,1,6,525,,x,,23/Jun/25
+MIYM,25/Jun/25,Chicken Burger,Lunch,,1,7,7,,x,,23/Jun/25
+Macey,17/Jun/25,Chicken Burger,Dinner R,2,1,1,1,122 - Gluten,,,15/Jun/25
+Macey,21/Jun/25,Chicken Burger,Dinner R,6,1,1,1,122 - Gluten,,,20/Jun/25
+Westover,28/Jun/25,Chicken Meatballs in Tomato Sauce,Dinner,3,180,24,4320,,x,,23/Jun/25
+Ying's,26/Jun/25,Chicken Meatballs in Tomato Sauce,Lunch,,135,6,1080,,x,,23/Jun/25
+Macey,18/Jun/25,Chicken Meatballs in Tomato Sauce,Dinner,3,180,23,4140,,,,15/Jun/25
+MIYM,26/Jun/25,Chicken Meatballs in Tomato Sauce,Lunch,,135,8,1080,,x,,23/Jun/25
+Dovercourt,18/Jun/25,Chicken Meatballs in Tomato Sauce,Dinner,3,180,25,4500,,,,15/Jun/25
+Richmond Hill CHATS,18/Jun/25,Chicken Meatballs in Tomato Sauce,Lunch,,135,17,2295,,,,16/Jun/25
+Bradford CHATS,18/Jun/25,Chicken Meatballs in Tomato Sauce,Lunch,,135,21,2835,,,,16/Jun/25
+Vaughan CHATS,18/Jun/25,Chicken Meatballs in Tomato Sauce,Lunch,,135,48,6480,,,,16/Jun/25
+Curlew,18/Jun/25,Chicken Meatballs in Tomato Sauce,Lunch,3,135,31,4185,,,hot,18/Jun/25
+Aurora CHATS,18/Jun/25,Chicken Meatballs in Tomato Sauce,Lunch,,135,0,0,,,,16/Jun/25
+Macey,19/Jun/25,Chicken Noodle Soup,Lunch R,4,250,1,250,253 - Dairy,,,18/Jun/25
+Dovercourt,19/Jun/25,Chicken Noodle Soup,Lunch R,4,250,1,250,"375 - Dairy, Fish",,,18/Jun/25
+Macey,20/Jun/25,Chicken Noodle Soup,Lunch,5,250,22,5500,,,,18/Jun/25
+Dovercourt,20/Jun/25,Chicken Noodle Soup,Lunch,5,250,25,6250,,,,18/Jun/25
+Macey,21/Jun/25,Chicken Salad,Lunch,6,90,23,2070,,,,20/Jun/25
+Dovercourt,21/Jun/25,Chicken Salad,Lunch,6,90,25,2250,,,,20/Jun/25
+Westover,29/Jun/25,Chicken Salad - chicken,Lunch,4,49,43,2107,,x,,23/Jun/25
+Westover,29/Jun/25,Chicken Salad - dressing,Lunch,4,21,43,923.21,,,x,23/Jun/25
+Westover,29/Jun/25,Chicken Salad - green onion,Lunch,4,2,43,104.92,,,x,23/Jun/25
+Westover,1/Jul/25,Chicken Sausage,Breakfast,6,2,43,86,,x,,23/Jun/25
+Ying's,30/Jun/25,Chicken Stew,Lunch,,170,6,1360,,x,,23/Jun/25
+MIYM,30/Jun/25,Chicken Stew,Lunch,,170,8,1360,,x,,23/Jun/25
+MIYM,24/Jun/25,Choco Snaps,Snack,,25,8,200,,,x,23/Jun/25
+Dovercourt,16/Jun/25,Ciabatta,Lunch,1,0.5,25,12.5,,,,15/Jun/25
+Macey,16/Jun/25,Ciabatta,Lunch,1,0.5,23,11.5,,,,15/Jun/25
+Macey,21/Jun/25,Ciabatta,Lunch,6,0.5,23,11.5,,,,20/Jun/25
+Dovercourt,21/Jun/25,Ciabatta,Lunch,6,0.5,25,12.5,,,,20/Jun/25
+Westover,26/Jun/25,Ciabatta Bun,Lunch,1,1,42,42,,,x,23/Jun/25
+Westover,27/Jun/25,Cinnamon Scone,Snack,2,1,42,42,,x,,23/Jun/25
+Westover,1/Jul/25,Cinnamon Scone,Snack,6,1,42,42,,x,,23/Jun/25
+Curlew,19/Jun/25,Cinnamon Scone,AM Snack,4,1,35,35,,,x,18/Jun/25
+Westover,27/Jun/25,Clementine,Snack,2,2,43,86,,,x,23/Jun/25
+Ying's,30/Jun/25,,Lunch,,1,6,8,,,x,23/Jun/25
+Curlew,20/Jun/25,Clementine,Lunch,5,2,40,80,,,x,20/Jun/25
+MIYM,30/Jun/25,Clementine,Lunch,,1,8,8,,,x,23/Jun/25
+Aurora CHATS,20/Jun/25,Clementine,Lunch,Clementine,2,18,36,,,,18/Jun/25
+RH Saturday CHATS,21/Jun/25,Clementines,Lunch,,2,10,20,,,,18/Jun/25
+Richmond Hill CHATS,20/Jun/25,Clementines,Lunch,,2,19,38,,,,18/Jun/25
+Vaughan CHATS,20/Jun/25,Clementines,Lunch,,2,50,100,,,,18/Jun/25
+Bradford CHATS,20/Jun/25,Clementines,Lunch,,2,17,34,,,,18/Jun/25
+Westover,27/Jun/25,Cream Cheese,Breakfast,2,1,43,43,,,x,23/Jun/25
+Westover,29/Jun/25,Cream Cheese,Snack,4,1,43,43,,,x,23/Jun/25
+Westover,30/Jun/25,Cream Cheese,Breakfast,5,1,43,43,,,x,23/Jun/25
+Curlew,17/Jun/25,Cream Cheese,PM Snack,2,1,34,34,,,x,17/Jun/25
+Dovercourt,17/Jun/25,Cream of Celery Soup,Lunch,2,250,24,6000,,,,15/Jun/25
+Macey,17/Jun/25,Cream of Celery Soup,Lunch,2,250,23,5750,,,,15/Jun/25
+Macey,20/Jun/25,Cream of Celery Soup,Lunch R,5,250,1,250,122 - Gluten,,,18/Jun/25
+Macey,20/Jun/25,Cream of Celery Soup,Lunch R,5,250,1,250,386 - Vegetarian,,,18/Jun/25
+Macey,21/Jun/25,Cream of Sweet Potato And Carrot Soup,Lunch,6,250,23,5750,,,,20/Jun/25
+Dovercourt,21/Jun/25,Cream of Sweet Potato And Carrot Soup,Lunch,6,250,24,6000,,,,20/Jun/25
+Macey,19/Jun/25,Cream of Tomato Soup,Lunch,4,250,23,5750,,,,18/Jun/25
+Dovercourt,19/Jun/25,Cream of Tomato Soup,Lunch,4,250,24,6000,,,,18/Jun/25
+Westover,30/Jun/25,Creamy Coleslaw - dressing,Lunch,5,10,43,430,,,x,23/Jun/25
+Westover,30/Jun/25,Creamy Coleslaw - vegetable,Lunch,5,90,43,3870,,,x,23/Jun/25
+MIYM,25/Jun/25,Cucumber Slices,Snack,,36,7,252,,,x,23/Jun/25
+Curlew,17/Jun/25,Cucumber Slices,PM Snack,2,36,35,1260,,,x,17/Jun/25
+Westover,27/Jun/25,"Cucumber, Tomato and Feta Salad - Feta Only",Lunch,2,10,43,430,,,x,23/Jun/25
+Westover,27/Jun/25,"Cucumber, Tomato and Feta Salad - veggies only",Lunch,2,90,43,3870,,,x,23/Jun/25
+Curlew,16/Jun/25,Dairy Free Legume Gluten Free Bowtie Pasta,Lunch R,1,187.5,1,187.5,Laya - Vegetarian m/f,,x,16/Jun/25
+Curlew,16/Jun/25,Dairy Free Legume Gluten Free Bowtie Pasta,Lunch R,1,187.5,1,187.5,Na'ay K - Vegan,,x,16/Jun/25
+Curlew,16/Jun/25,Dairy Free Legume Gluten Free Bowtie Pasta,Lunch R,1,187.5,1,187.5,Tarasha K - Vegetarian m/f,,x,16/Jun/25
+Richmond Hill CHATS,16/Jun/25,Dairy Free Legume Gluten Free Bowtie Pasta,Lunch R,,170,1,170,Garry - Vegetarian - no m/f,,,16/Jun/25
+Vaughan CHATS,16/Jun/25,Dairy Free Legume Gluten Free Bowtie Pasta,Lunch R,,170,1,170,Davender K - Vegetarian - no meat/fish,,,16/Jun/25
+Bradford CHATS,16/Jun/25,Dairy Free Legume Gluten Free Bowtie Pasta,Lunch R,,170,1,170,Doug J - Gluten,,,16/Jun/25
+Curlew,16/Jun/25,Dairy Free Legume Gluten Free Bowtie Pasta,Lunch R,1,187.5,1,187.5,Virat T - Vegetarian m/f,,x,16/Jun/25
+Vaughan CHATS,16/Jun/25,Dairy Free Legume Gluten Free Bowtie Pasta,Lunch R,,170,1,170,Kalash V. - Vegetarian - no meat/fish,,,16/Jun/25
+Westover,26/Jun/25,Dairy Free Legume Gluten Free Bowtie Pasta,Dinner R,1,250,1,250,Gluten Free,x,,23/Jun/25
+Aurora CHATS,16/Jun/25,Diced Carrots,Lunch R,,75,1,75,"Charlie B. - Seeds, Berries, Corn, Cucumber, Rice, Peas, Legumes, Tomato",,,16/Jun/25
+Aurora CHATS,16/Jun/25,Diced Carrots,Lunch R,,75,1,75,"Eileen. - Banana, Corn, Berries, Seeds, Rice, Legumes, Cucumber, Peas, Tomato",,,16/Jun/25
+Aurora CHATS,16/Jun/25,Diced Carrots,Lunch R,,75,1,75,"Vincenza M. - Banana, Citrus, Potato, Tomato, Legumes, Rice",,,16/Jun/25
+Bradford CHATS,17/Jun/25,Diced Carrots,Lunch R,,75,1,75,Sid J. - Tomato,,,16/Jun/25
+Westover,27/Jun/25,Digestive Cookie,Snack,2,3,42,126,,,x,23/Jun/25
+Dovercourt,16/Jun/25,Dinner Roll,Dinner,1,1,25,25,,,,15/Jun/25
+Macey,16/Jun/25,Dinner Roll,Dinner,1,1,23,23,,,,15/Jun/25
+Westover,26/Jun/25,Dinner Roll,Dinner,1,0.5,42,21,,,x,23/Jun/25
+Westover,29/Jun/25,Dinner Roll,Dinner,4,0.5,42,21,,,x,23/Jun/25
+Westover,30/Jun/25,Dinner Roll,Dinner,5,0.5,42,21,,,x,23/Jun/25
+Macey,18/Jun/25,Dinner Roll,Dinner R,3,1,1,1,253 - Dairy,,,15/Jun/25
+Dovercourt,18/Jun/25,Dinner Roll,Dinner R,3,1,1,1,"375 - Dairy, Fish",,,15/Jun/25
+Macey,19/Jun/25,Dinner Roll,Dinner,4,1,23,23,,,,18/Jun/25
+Dovercourt,19/Jun/25,Dinner Roll,Dinner,4,1,25,25,,,,18/Jun/25
+Macey,20/Jun/25,Dinner Roll,Dinner,5,1,23,23,,,,18/Jun/25
+Dovercourt,20/Jun/25,Dinner Roll,Dinner,5,1,25,25,,,,18/Jun/25
+Richmond Hill CHATS,20/Jun/25,Dinner Roll,Lunch R,,1,1,1,Yeshembet- Vegan,,,18/Jun/25
+Macey,22/Jun/25,Dinner Roll,Dinner R,7,1,1,1,253 - Dairy,,,20/Jun/25
+Curlew,20/Jun/25,Dinner Rolll,Lunch R,5,1.0,1,1,Na'ay K - Vegan,,x,20/Jun/25
+Westover,1/Jul/25,Egg Frittata,Breakfast,6,1,43,43,,x,,23/Jun/25
+Macey,20/Jun/25,Egg Salad,Lunch,5,90,25,2250,,,,18/Jun/25
+Dovercourt,20/Jun/25,Egg Salad,Lunch,5,90,25,2250,,,,18/Jun/25
+Macey,22/Jun/25,Egg Salad,Lunch R,7,90,1,90,253 - Dairy,,,20/Jun/25
+Macey,22/Jun/25,Egg Salad,Lunch R,7,90,1,90,386 - Vegetarian,,,20/Jun/25
+Dovercourt,22/Jun/25,Egg Salad,Lunch R,7,90,1,90,"375- Dairy, Fish",,,20/Jun/25
+Westover,28/Jun/25,Egg Salad - dressing,Lunch,3,13,24,300.72,,,x,23/Jun/25
+Westover,28/Jun/25,Egg Salad - green onion,Lunch,3,8,24,195.36,,,x,23/Jun/25
+Westover,28/Jun/25,Egg Salad - hardboiled egg,Lunch,3,1,24,24,,,x,23/Jun/25
+Westover,28/Jun/25,English Muffin,Breakfast,3,1,23,23,,,x,23/Jun/25
+Curlew,23/Jun/25,French Toast Sticks,AM Snack,1,2,34,68,,,x,20/Jun/25
+Westover,2/Jul/25,Fruit and Grain Breakfast Flat Bread,Breakfast,7,1,0,0,,,x,23/Jun/25
+RH Saturday CHATS,21/Jun/25,Garlic Bread,Lunch,,1,10,10,,,,18/Jun/25
+Westover,28/Jun/25,Garlic Bread,Dinner,3,0.5,23,11.5,,,x,23/Jun/25
+Westover,2/Jul/25,Garlic Bread,Dinner,7,0.5,42,21,,,x,23/Jun/25
+Macey,18/Jun/25,Garlic Bread,Dinner,3,1,22,22,,,,15/Jun/25
+Dovercourt,18/Jun/25,Garlic Bread,Dinner,3,1,24,24,,,,15/Jun/25
+Dovercourt,22/Jun/25,Garlic Bread,Dinner,7,1,24,24,,,,20/Jun/25
+Richmond Hill CHATS,20/Jun/25,Garlic Bread,Lunch,,1,17,17,,,,18/Jun/25
+Vaughan CHATS,20/Jun/25,Garlic Bread,Lunch,,1,50,50,,,,18/Jun/25
+Bradford CHATS,20/Jun/25,Garlic Bread,Lunch,,1,17,17,,,,18/Jun/25
+Macey,22/Jun/25,Garlic Bread,Dinner,7,1,22,22,,,,20/Jun/25
+Curlew,20/Jun/25,Garlic Bread,Lunch,5,1,39,39,,,x,20/Jun/25
+Ying's,30/Jun/25,Garlic Bread,Lunch,,1,6,8,,x,,23/Jun/25
+MIYM,30/Jun/25,Garlic Bread,Lunch,,1,8,8,,x,,23/Jun/25
+Aurora CHATS,20/Jun/25,Garlic Bread,Lunch,,1,18,18,,,,18/Jun/25
+Westover,30/Jun/25,GF Beef Bolognese Pasta,Lunch R,5,250,1,250,Gluten Free,x,,23/Jun/25
+Westover,27/Jun/25,GF Chicken Burger,Dinner,2,1,1,1,Gluten Free,x,,23/Jun/25
+Westover,1/Jul/25,GF Chicken Burger,Dinner R,6,1,1,1,Gluten Free,x,,23/Jun/25
+Westover,1/Jul/25,GF Pasta in Tomato Sauce,Lunch R,6,250,1,250,Gluten Free,x,,23/Jun/25
+Macey,19/Jun/25,Ginger Beef Stir Fry/Mushrooms/Peppers,Dinner,4,180,23,4140,,,,18/Jun/25
+Dovercourt,19/Jun/25,Ginger Beef Stir Fry/Mushrooms/Peppers,Dinner,4,180,25,4500,,,,18/Jun/25
+Westover,29/Jun/25,Ginger Beef Stir with Vegetables,Dinner,4,180,43,7740,,x,,23/Jun/25
+Westover,26/Jun/25,Ginger Snaps,Snack,1,25,42,1050,,,x,23/Jun/25
+Westover,27/Jun/25,Ginger Snaps,Snack,2,25,42,1050,,,x,23/Jun/25
+Macey,19/Jun/25,Ginger Tofu Stir Fry/Mushrooms and Peppers,Dinner R,4,180,1,180,386 - Vegetarian,,,18/Jun/25
+Macey,16/Jun/25,Gluten Free Bread,Lunch R,1,2,1,2,122 - Gluten,,,15/Jun/25
+Macey,16/Jun/25,Gluten Free Bread,Dinner R,1,1,1,1,122 - Gluten,,,15/Jun/25
+Macey,17/Jun/25,Gluten Free Bread,Lunch R,2,2,1,2,122 - Gluten,,,15/Jun/25
+Richmond Hill CHATS,17/Jun/25,Gluten Free Bread,Lunch R,,1,0,0,"Judy C - Dairy, Gluten, Pasta",,,16/Jun/25
+Macey,17/Jun/25,Gluten Free Bread,Dinner R,2,2,1,2,122 - Gluten,,,15/Jun/25
+Macey,18/Jun/25,Gluten Free Bread,Lunch R,3,2,1,2,122 - Gluten,,,15/Jun/25
+Westover,26/Jun/25,Gluten Free Bread,Lunch R,1,2,1,2,Gluten Free,x,,23/Jun/25
+Westover,26/Jun/25,Gluten Free Bread,Dinner R,1,1,1,1,Gluten Free,x,,23/Jun/25
+Westover,26/Jun/25,Gluten Free Bread,Breakfast R,1,1,1,1,Gluten Free,x,,23/Jun/25
+Westover,27/Jun/25,Gluten Free Bread,Dinner R,2,1,1,1,Gluten Free,x,,23/Jun/25
+Westover,27/Jun/25,Gluten Free Bread,Breakfast R,2,2,1,2,Gluten Free,x,,23/Jun/25
+Westover,28/Jun/25,Gluten Free Bread,Breakfast R,3,2,1,2,Gluten Free,x,,23/Jun/25
+Westover,28/Jun/25,Gluten Free Bread,Dinner R,3,1,1,1,Gluten Free,x,,23/Jun/25
+Westover,28/Jun/25,Gluten Free Bread,Lunch R,3,2,1,2,Gluten Free,x,,23/Jun/25
+Westover,29/Jun/25,Gluten Free Bread,Dinner R,4,1,1,1,Gluten Free,x,,23/Jun/25
+Westover,29/Jun/25,Gluten Free Bread,Lunch R,4,2,1,2,Gluten Free,x,,23/Jun/25
+Westover,29/Jun/25,Gluten Free Bread,Breakfast R,4,2,1,2,Gluten Free,x,,23/Jun/25
+Westover,30/Jun/25,Gluten Free Bread,Dinner R,5,1,1,1,Gluten Free,x,,23/Jun/25
+Westover,30/Jun/25,Gluten Free Bread,Breakfast R,5,1,1,1,Gluten Free,x,,23/Jun/25
+Westover,1/Jul/25,Gluten Free Bread,Dinner R,6,1,1,1,Gluten Free,x,,23/Jun/25
+Westover,2/Jul/25,Gluten Free Bread,Breakfast R,7,1,1,1,Gluten Free,x,,23/Jun/25
+Westover,2/Jul/25,Gluten Free Bread,Dinner R,7,1,1,1,Gluten Free,x,,23/Jun/25
+Westover,2/Jul/25,Gluten Free Bread,Lunch R,7,2,1,2,Gluten Free,x,,23/Jun/25
+Macey,18/Jun/25,Gluten Free Bread,Dinner R,3,1,1,1,122 - Gluten,,,15/Jun/25
+Macey,19/Jun/25,Gluten Free Bread,Lunch R,4,2,1,2,122 - Gluten,,,18/Jun/25
+Macey,19/Jun/25,Gluten Free Bread,Dinner R,4,1,1,1,122 - Gluten,,,18/Jun/25
+Macey,20/Jun/25,Gluten Free Bread,Lunch R,5,2,1,2,122 - Gluten,,,18/Jun/25
+Macey,20/Jun/25,Gluten Free Bread,Dinner R,5,1,1,1,122 - Gluten,,,18/Jun/25
+Macey,21/Jun/25,Gluten Free Bread,Lunch R,6,2,1,2,122 - Gluten,,,20/Jun/25
+Macey,21/Jun/25,Gluten Free Bread,Dinner R,6,2,1,2,122 - Gluten,,,20/Jun/25
+Macey,22/Jun/25,Gluten Free Bread,Lunch R,7,2,1,2,122 - Gluten,,,20/Jun/25
+Macey,22/Jun/25,Gluten Free Bread,Dinner R,7,1,1,1,122 - Gluten,,,20/Jun/25
+Richmond Hill CHATS,20/Jun/25,Gluten Free Bread,Lunch R,,1,1,1,"Judy C - Dairy, Gluten, Pasta",,,18/Jun/25
+Westover,26/Jun/25,Gluten Free Chocolate Chip Cookie,Lunch Dessert R,1,1,1,1,Gluten Free,x,,23/Jun/25
+Westover,27/Jun/25,Gluten Free Chocolate Chip Cookie,Snack R,2,3,1,3,Gluten Free,x,,23/Jun/25
+Westover,28/Jun/25,Gluten Free Chocolate Chip Cookie,Lunch Dessert R,3,1,1,1,Gluten Free,x,,23/Jun/25
+Westover,1/Jul/25,Gluten Free Chocolate Chip Cookie,Dinner Dessert R,6,1,1,1,Gluten Free,x,,23/Jun/25
+Westover,2/Jul/25,Gluten Free Chocolate Chip Cookie,Dinner Dessert R,7,1,1,1,Gluten Free,x,,23/Jun/25
+Macey,16/Jun/25,Gluten Free Crackers,Lunch R,1,25,1,25,122 - Gluten,,,15/Jun/25
+Macey,17/Jun/25,Gluten Free Crackers,Lunch R,2,25,1,25,122 - Gluten,,,15/Jun/25
+Macey,18/Jun/25,Gluten Free Crackers,Lunch R,3,25,1,25,122 - Gluten,,,15/Jun/25
+Westover,26/Jun/25,Gluten Free Crackers,Snack R,1,25,1,25,Gluten Free,,x,23/Jun/25
+Macey,19/Jun/25,Gluten Free Crackers,Lunch R,4,25,1,25,122 - Gluten,,,18/Jun/25
+Westover,28/Jun/25,Gluten Free Crackers,Snack R,3,25,1,25,Gluten Free,,x,23/Jun/25
+Westover,29/Jun/25,Gluten Free Crackers,Snack R,4,25,1,25,Gluten Free,,x,23/Jun/25
+Westover,30/Jun/25,Gluten Free Crackers,Snack R,5,25,1,25,Gluten Free,,x,23/Jun/25
+Westover,30/Jun/25,Gluten Free Crackers,Snack R,5,25,1,25,Gluten Free,,x,23/Jun/25
+Westover,2/Jul/25,Gluten Free Crackers,Snack R,7,25,1,25,Gluten Free,,x,23/Jun/25
+Macey,20/Jun/25,Gluten Free Crackers,Lunch R,5,25,1,25,122 - Gluten,,,18/Jun/25
+Macey,21/Jun/25,Gluten Free Crackers,Lunch R,6,25,1,25,122 - Gluten,,,20/Jun/25
+Macey,22/Jun/25,Gluten Free Crackers,Lunch R,7,25,1,25,122 - Gluten,,,20/Jun/25
+Westover,26/Jun/25,Gluten Free Granola Bar,Dinner Dessert R,1,1,1,1,Gluten Free,,x,23/Jun/25
+Westover,27/Jun/25,Gluten Free Granola Bar,Snack R,2,1,1,1,Gluten Free,,x,23/Jun/25
+Westover,2/Jul/25,Gluten Free Granola Bar,Lunch Dessert R,7,1,1,1,Gluten Free,,x,23/Jun/25
+Curlew,20/Jun/25,Gluten Free Granola Bar,AM Snack,5,1,35,35,,,x,19/Jun/25
+Westover,26/Jun/25,Gluten Free Granola Minis,Snack R,1,1,1,1,Gluten Free,,x,23/Jun/25
+Westover,27/Jun/25,Gluten Free Granola Minis,Snack R,2,1,1,1,Gluten Free,,x,23/Jun/25
+Westover,1/Jul/25,Gluten Free Granola Minis,Snack R,6,1,1,1,Gluten Free,,x,23/Jun/25
+Westover,28/Jun/25,Goldfish Crackers,Snack,3,1,23,23,,,x,23/Jun/25
+Westover,30/Jun/25,Goldfish Crackers,Snack,5,1,42,42,,,x,23/Jun/25
+Curlew,17/Jun/25,Granola,AM Snack,2,25,35,875,,,x,16/Jun/25
+MIYM,27/Jun/25,Granola,Snack,,25,8,200,,,x,23/Jun/25
+Curlew,19/Jun/25,Granola,PM Snack,4,25,35,875,,,x,19/Jun/25
+Westover,1/Jul/25,Grape Tomatoes,Snack,6,40,43,1720,,,x,23/Jun/25
+Westover,2/Jul/25,Green Beans,Dinner,7,100,43,4300,,x,,23/Jun/25
+RH Saturday CHATS,21/Jun/25,Green Beans,Lunch,,75,10,750,,,,18/Jun/25
+Vaughan CHATS,20/Jun/25,Green Beans,Lunch,,75,50,3750,,,,18/Jun/25
+Curlew,20/Jun/25,Green Beans,Lunch,5,105,40,4200,,,Hot,20/Jun/25
+Richmond Hill CHATS,20/Jun/25,Green Beans,Lunch,,75,19,1425,,,,18/Jun/25
+Macey,22/Jun/25,Green Beans,Dinner,7,100,25,2500,,,,20/Jun/25
+Ying's,30/Jun/25,Green Beans,Lunch,,75,6,600,,x,,23/Jun/25
+MIYM,30/Jun/25,Green Beans,Lunch,,75,8,600,,x,,23/Jun/25
+Bradford CHATS,20/Jun/25,Green Beans,Lunch,,75,17,1275,,,,18/Jun/25
+Aurora CHATS,20/Jun/25,Green Beans,Lunch,,75,18,1350,,,,18/Jun/25
+Dovercourt,22/Jun/25,Green Beans,Dinner,7,100,25,2500,,,,20/Jun/25
+Dovercourt,18/Jun/25,Ham Slices,Lunch,3,70,25,1750,,,,15/Jun/25
+Macey,18/Jun/25,Ham Slices,Lunch,3,70,23,1610,,,,15/Jun/25
+Westover,2/Jul/25,Ham Slices,Lunch,7,70,43,3010,,,x,23/Jun/25
+Ying's,25/Jun/25,Hamburger Bun,Lunch,,1,6,7,,,x,23/Jun/25
+MIYM,25/Jun/25,Hamburger Bun,Lunch,,1,7,7,,,x,23/Jun/25
+Curlew,17/Jun/25,Hamburger Bun,Lunch,2,1,40,40,,,x,17/Jun/25
+Vaughan CHATS,17/Jun/25,Hamburger Bun,Lunch,,1,50,50,,,,16/Jun/25
+Bradford CHATS,17/Jun/25,Hamburger Bun,Lunch,,1,21,21,,,,16/Jun/25
+Richmond Hill CHATS,17/Jun/25,Hamburger Bun,Lunch,,1,0,0,,,,16/Jun/25
+Dovercourt,17/Jun/25,Hamburger Bun,Dinner,2,1,25,25,,,,15/Jun/25
+Macey,17/Jun/25,Hamburger Bun,Dinner,2,1,23,23,,,,15/Jun/25
+Westover,27/Jun/25,Hamburger Bun,Dinner,2,1,42,42,,,x,23/Jun/25
+Aurora CHATS,17/Jun/25,Hamburger Bun,Lunch,,1,25,25,,,,16/Jun/25
+Westover,1/Jul/25,Hamburger Bun,Dinner,6,1,42,42,,,x,23/Jun/25
+Macey,21/Jun/25,Hamburger Bun,Dinner,6,1,23,23,,,,20/Jun/25
+Dovercourt,21/Jun/25,Hamburger Bun,Dinner,6,1,25,25,,,,20/Jun/25
+Westover,27/Jun/25,Hardboiled Egg,Breakfast,2,2,43,86,,,x,23/Jun/25
+Dovercourt,16/Jun/25,Harvest Vegetable Soup,Lunch,1,250,25,6250,,,,15/Jun/25
+Macey,16/Jun/25,Harvest Vegetable Soup,Lunch,1,250,25,6250,,,,15/Jun/25
+Dovercourt,17/Jun/25,Harvest Vegetable Soup,Lunch R,2,250,1,250,"375 - Dairy, Fish",,,15/Jun/25
+Macey,17/Jun/25,Harvest Vegetable Soup,Lunch R,2,250,1,250,253 -  Dairy,,,15/Jun/25
+Westover,26/Jun/25,Harvest Vegetable Soup,Lunch,1,250,43,10750,,x,,23/Jun/25
+Westover,2/Jul/25,Harvest Vegetable Soup,Lunch R,7,250,1,250,Gluten Free,x,,23/Jun/25
+Macey,21/Jun/25,Harvest Vegetable Soup,Lunch R,6,250,1,250,253 - Dairy,,,20/Jun/25
+Dovercourt,21/Jun/25,Harvest Vegetable Soup,Lunch R,6,250,1,250,"375 - Dairy, Fish",,,20/Jun/25
+Macey,22/Jun/25,Harvest Vegetable Soup,Lunch R,7,250,1,250,122 - Gluten,,,20/Jun/25
+Curlew,19/Jun/25,Homo Milk Carton,Beverage,4,1,1,1,,,x,19/Jun/25
+Vaughan CHATS,17/Jun/25,Honeydew Melon,Lunch,,0.07,50,3.5,,,,16/Jun/25
+Bradford CHATS,17/Jun/25,Honeydew Melon,Lunch,,0.07,21,1,,,,16/Jun/25
+Richmond Hill CHATS,17/Jun/25,Honeydew Melon,Lunch,,0.07,0,0,,,,16/Jun/25
+Ying's,27/Jun/25,Honeydew Melon,Lunch,,0.07,6,0.56,,,x,23/Jun/25
+Aurora CHATS,17/Jun/25,Honeydew Melon,Lunch,,0.07,24,2,,,,16/Jun/25
+Westover,30/Jun/25,Honeydew Melon,Breakfast,5,0.07,43,3.01,,,x,23/Jun/25
+MIYM,27/Jun/25,Honeydew Melon,Lunch,,0.07,8,0.56,,,x,23/Jun/25
+Curlew,19/Jun/25,Honeydew Melon,Lunch,4,0.07,40,2.8,,,x,19/Jun/25
+Macey,16/Jun/25,Hummus,Lunch R,1,2,1,2,127 - Egg/Fish,,,15/Jun/25
+Curlew,16/Jun/25,Hummus,PM Snack R,1,1,1,1,Na'ay K - Vegan,,x,16/Jun/25
+MIYM,25/Jun/25,Hummus,Snack,,1,7,7,,,x,23/Jun/25
+Macey,18/Jun/25,Hummus,Lunch R,3,2,1,2,127 - Egg/Fish,,,15/Jun/25
+Macey,19/Jun/25,Hummus,Lunch R,4,2,1,2,386 - Vegetarian,,,18/Jun/25
+Westover,26/Jun/25,Hummus,Snack,1,1,43,43,,,x,23/Jun/25
+Westover,28/Jun/25,Hummus,Snack,3,1,24,24,,,x,23/Jun/25
+Westover,1/Jul/25,Hummus,Snack,6,1,43,43,,,x,23/Jun/25
+Westover,2/Jul/25,Hummus,Snack,7,1,43,43,,,x,23/Jun/25
+Curlew,16/Jun/25,Italian Mixed Vegetables,Lunch,1,105,40,4200,,,Hot,16/Jun/25
+MIYM,24/Jun/25,Italian Mixed Vegetables,Lunch,,75,8,600,,x,,23/Jun/25
+Ying's,24/Jun/25,Italian Mixed Vegetables,Lunch,,75,6,600,,x,,23/Jun/25
+Richmond Hill CHATS,16/Jun/25,Italian Mixed Vegetables,Lunch,,75,20,1500,,,,16/Jun/25
+Bradford CHATS,16/Jun/25,Italian Mixed Vegetables,Lunch,,75,17,1275,,,,16/Jun/25
+Vaughan CHATS,16/Jun/25,Italian Mixed Vegetables,Lunch,,75,30,2250,,,,16/Jun/25
+Aurora CHATS,16/Jun/25,Italian Mixed Vegetables,Lunch,,75,20,1500,,,,16/Jun/25
+Dovercourt,16/Jun/25,Italian Mixed Vegetables,Dinner,1,100,25,2500,,,,15/Jun/25
+Macey,16/Jun/25,Italian Mixed Vegetables,Dinner,1,100,25,2500,,,,15/Jun/25
+Westover,26/Jun/25,Italian Mixed Vegetables,Dinner,1,100,43,4300,,x,,23/Jun/25
+Westover,Daily,Jam,Breakfast,Daily,1,0,0,,,x,23/Jun/25
+Westover,30/Jun/25,Jasmine Rice,Dinner,5,140,43,6020,,x,,23/Jun/25
+Macey,20/Jun/25,Jasmine Rice,Dinner,5,140,25,3500,,,,18/Jun/25
+Dovercourt,20/Jun/25,Jasmine Rice,Dinner,5,140,25,3500,,,,18/Jun/25
+Dovercourt,16/Jun/25,Ketchup,Condiment,1,1,1,1,,,,15/Jun/25
+Macey,16/Jun/25,Ketchup,Condiment,1,1,1,1,,,,15/Jun/25
+RH Saturday CHATS,21/Jun/25,Legume Stew,Lunch R,,170,1,170,Garry - Vegetarian - no m/f,,,18/Jun/25
+Macey,22/Jun/25,Legume Stew,Dinner R,7,250,1,250,386 - Vegetarian,,,20/Jun/25
+Vaughan CHATS,20/Jun/25,Legume Stew,Lunch R,,170,1,170,Davender K - Vegetarian - no meat/fish,,,18/Jun/25
+Curlew,20/Jun/25,Legume Stew,Lunch R,5,187.5,1,187.5,Amelia H - Vegetarian m,,x,20/Jun/25
+Curlew,20/Jun/25,Legume Stew,Lunch R,5,187.5,1,187.5,Ayzal A - Halal,,x,20/Jun/25
+Curlew,20/Jun/25,Legume Stew,Lunch R,5,187.5,1,187.5,Demetre A - Halal,,x,20/Jun/25
+Curlew,20/Jun/25,Legume Stew,Lunch R,5,187.5,1,187.5,Fatima H - Halal,,x,20/Jun/25
+Curlew,20/Jun/25,Legume Stew,Lunch R,5,187.5,1,187.5,Hameem A - Halal,,x,20/Jun/25
+Curlew,20/Jun/25,Legume Stew,Lunch R,5,187.5,1,187.5,Laya S - Vegetarian m/f,,x,20/Jun/25
+Vaughan CHATS,20/Jun/25,Legume Stew,Lunch R,,170,1,170,Kalash V. - Vegetarian - no meat/fish,,,18/Jun/25
+Curlew,20/Jun/25,Legume Stew,Lunch R,5,187.5,1,187.5,Maryam D - Vegetarian m,,x,20/Jun/25
+Curlew,20/Jun/25,Legume Stew,Lunch R,5,187.5,1,187.5,Mikaeel H - Vegetarian m,,x,20/Jun/25
+Curlew,20/Jun/25,Legume Stew,Lunch R,5,187.5,1,187.5,Na'ay K - Vegan,,x,20/Jun/25
+Curlew,20/Jun/25,Legume Stew,Lunch R,5,187.5,1,187.5,Ruqayyan M - Vegetarian m,,x,20/Jun/25
+Curlew,20/Jun/25,Legume Stew,Lunch R,5,187.5,1,187.5,Tarasha K - Vegetarian m/f,,x,20/Jun/25
+Curlew,20/Jun/25,Legume Stew,Lunch R,5,187.5,1,187.5,Virat T - Vegetarian m/f,,x,20/Jun/25
+Vaughan CHATS,20/Jun/25,Legume Stew,Lunch R,,170,1,170,Lashmi. - Vegetarian - no meat,,,18/Jun/25
+Curlew,20/Jun/25,Legume Stew,Lunch R,5,187.5,1,187.5,Yusuf M - Vegetarian m,,x,20/Jun/25
+Curlew,20/Jun/25,Legume Stew,Lunch R,5,187.5,1,187.5,Zain M - Halal,,x,20/Jun/25
+Curlew,20/Jun/25,Legume Stew,Lunch R,5,187.5,1,187.5,Zinara K - Halal,,x,20/Jun/25
+Richmond Hill CHATS,20/Jun/25,Legume Stew,Lunch R,,170,1,170,Yeshembet- Vegan,,,18/Jun/25
+Vaughan CHATS,20/Jun/25,Legume Stew,Lunch R,,170,1,170,Maria B. - Vegetarian - no meat,,,18/Jun/25
+Ying's,27/Jun/25,Lentil and Sweet Potato Casserole,Lunch,,170,6,1360,,x,,23/Jun/25
+MIYM,27/Jun/25,Lentil and Sweet Potato Casserole,Lunch,,170,8,1360,,x,,23/Jun/25
+Curlew,19/Jun/25,Lentil and Sweet Potato Casserole,Lunch,4,105,40,4200,,,Hot,19/Jun/25
+Richmond Hill CHATS,19/Jun/25,Lentil and Sweet Potato Casserole,Lunch,,170,19,3230,,,,18/Jun/25
+Vaughan CHATS,19/Jun/25,Lentil and Sweet Potato Casserole,Lunch,,170,50,8500,,,,18/Jun/25
+Bradford CHATS,19/Jun/25,Lentil and Sweet Potato Casserole,Lunch,,170,17,2890,,,,18/Jun/25
+Aurora CHATS,19/Jun/25,Lentil and Sweet Potato Casserole,Lunch,,170,23,3910,,,,18/Jun/25
+Macey,18/Jun/25,Lentil Soup,Lunch,3,250,25,6250,,,,15/Jun/25
+Dovercourt,18/Jun/25,Lentil Soup,Lunch,3,250,25,6250,,,,15/Jun/25
+Westover,29/Jun/25,Lentil Soup,Lunch,4,250,43,10750,,x,,23/Jun/25
+Westover,28/Jun/25,Lentil Soup,Lunch R,7,250,1,250,Gluten Free,x,,23/Jun/25
+Dovercourt,16/Jun/25,Lettuce - Whole (1 = 17 servings),Lunch,1,0.06,25,1.5,,,,15/Jun/25
+Macey,16/Jun/25,Lettuce - Whole (1 = 17 servings),Lunch,1,0.06,25,1.5,,,,15/Jun/25
+Dovercourt,17/Jun/25,Lettuce - Whole (1 = 17 servings),Lunch,2,0.06,25,1.5,,,,15/Jun/25
+Macey,17/Jun/25,Lettuce - Whole (1 = 17 servings),Lunch,2,0.06,25,1.5,,,,15/Jun/25
+Richmond Hill CHATS,17/Jun/25,Lettuce - Whole (1 = 17 servings),Lunch,,0.06,0,0.0,,,,16/Jun/25
+Vaughan CHATS,17/Jun/25,Lettuce - Whole (1 = 17 servings),Lunch,,0.06,50,2.9,,,,16/Jun/25
+Bradford CHATS,17/Jun/25,Lettuce - Whole (1 = 17 servings),Lunch,,0.06,21,1.2,,,,16/Jun/25
+Macey,19/Jun/25,Lettuce - Whole (1 = 17 servings),Lunch,4,0.06,25,1.5,,,,18/Jun/25
+Aurora CHATS,17/Jun/25,Lettuce - Whole (1 = 17 servings),Lunch,,0.06,25,1.5,,,,16/Jun/25
+Westover,26/Jun/25,Lettuce - Whole (1 = 17 servings),Lunch,1,0.06,43,2.5,,x,,23/Jun/25
+Macey,20/Jun/25,Lettuce - Whole (1 = 17 servings),Lunch,5,0.06,25,1.5,,,,18/Jun/25
+Dovercourt,19/Jun/25,Lettuce - Whole (1 = 17 servings),Lunch,4,0.06,25,1.5,,,,18/Jun/25
+Westover,29/Jun/25,Lettuce - Whole (1 = 17 servings),Lunch,4,0.06,43,2.5,,,x,23/Jun/25
+Westover,1/Jul/25,Lettuce - Whole (1 = 17 servings),Dinner,6,0.06,43,2.5,,,x,23/Jun/25
+Dovercourt,20/Jun/25,Lettuce - Whole (1 = 17 servings),Lunch,5,0.06,25,1.5,,,,18/Jun/25
+Macey,21/Jun/25,Lettuce - Whole (1 = 17 servings),Dinner,6,0.06,25,1.5,,,,20/Jun/25
+Dovercourt,21/Jun/25,Lettuce - Whole (1 = 17 servings),Dinner,6,0.06,25,1.5,,,,20/Jun/25
+Dovercourt,17/Jun/25,Lettuce Leaf,Dinner R,2,10,1,10.0,"375 - Dairy, Fish",,,15/Jun/25
+Macey,17/Jun/25,Lettuce Leaf,Dinner R,2,10,1,10.0,253 -  Dairy,,,15/Jun/25
+Curlew,16/Jun/25,Maple Snaps,PM Snack,1,25,35,875,,,x,16/Jun/25
+Westover,26/Jun/25,Marble/Vanilla Loaf,Dinner Dessert,1,0.2,0,0,,x,,23/Jun/25
+Westover,28/Jun/25,Marble/Vanilla Loaf,Lunch Dessert,3,0.2,0,0,,x,,23/Jun/25
+Westover,2/Jul/25,Marble/Vanilla Loaf,Lunch Dessert,7,0.2,0,0,,x,,23/Jun/25
+Dovercourt,16/Jun/25,Margarine,Condiment,1,1,1,1,,,,15/Jun/25
+Macey,16/Jun/25,Margarine,Condiment,1,1,1,1,,,,15/Jun/25
+Dovercourt,16/Jun/25,Mayonnaise,Condiment,1,1,1,1,,,,15/Jun/25
+Macey,16/Jun/25,Mayonnaise,Condiment,1,1,1,1,,,,15/Jun/25
+Westover,2/Jul/25,Minestrone Soup,Lunch,7,250,42,10500,,x,,23/Jun/25
+Dovercourt,22/Jun/25,Minestrone Soup,Lunch,7,250,25,6250,,,,20/Jun/25
+Macey,22/Jun/25,Minestrone Soup,Lunch,7,250,23,5750,,,,20/Jun/25
+Westover,2/Jul/25,Mini Cucumber,Snack,7,2,43,86,,,x,23/Jun/25
+Westover,27/Jun/25,Mocha Mousse Cake,Dinner Dessert,2,1,42,42,,x,,23/Jun/25
+Macey,18/Jun/25,MultiGrain Bread,Lunch,3,2,23,46,,,,15/Jun/25
+Dovercourt,18/Jun/25,MultiGrain Bread,Lunch,3,2,25,50,,,,15/Jun/25
+Dovercourt,18/Jun/25,No Substitution - Cheese,Lunch R,3,0,1,0,"375 - Dairy, Fish",,,15/Jun/25
+Macey,18/Jun/25,No Substitution - Cheese,Lunch R,3,0,1,0,253 - Dairy,,,15/Jun/25
+Curlew,17/Jun/25,Nut Free Butter,PM Snack R,2,1,1,1,Na'ay K - Vegan,,x,17/Jun/25
+Westover,30/Jun/25,Nut Free Butter,Snack,5,1,0,0,,,x,23/Jun/25
+Westover,2/Jul/25,Nut Free Butter,Breakfast,7,1,0,0,,,x,23/Jun/25
+Westover,2/Jul/25,Nut Free Butter,Snack,7,1,0,0,,,x,23/Jun/25
+Curlew,20/Jun/25,Oatmeal Cookie,PM Snack,5,1,35,35,,,x,20/Jun/25
+MIYM,30/Jun/25,Oatmeal Cookie,Snack,,1,8,8,,x,,23/Jun/25
+Curlew,23/Jun/25,Oatmeal Cookie,AM Snack R,1,2,1,2,Na'ay K - Vegan,,x,20/Jun/25
+Westover,26/Jun/25,Oatmeal Raisin Cookie,Snack,1,2,43,86,,,x,23/Jun/25
+Westover,28/Jun/25,Oatmeal Raisin Cookie,Snack,3,2,24,48,,,x,23/Jun/25
+MIYM,26/Jun/25,Orange,Snack,,0.5,9,4.5,,,x,23/Jun/25
+Bradford CHATS,18/Jun/25,Orange,Lunch,,1,21,21,,,,16/Jun/25
+Richmond Hill CHATS,18/Jun/25,Orange,Lunch,,1,17,17,,,,16/Jun/25
+Vaughan CHATS,18/Jun/25,Orange,Lunch,,1,50,50,,,,16/Jun/25
+Curlew,18/Jun/25,Orange,PM Snack,3,1,35,35,,,x,18/Jun/25
+Westover,26/Jun/25,Orange,Snack,1,1,43,43,,,x,23/Jun/25
+Westover,1/Jul/25,Orange,Breakfast,6,0.5,43,21.5,,,x,23/Jun/25
+Aurora CHATS,18/Jun/25,Orange,Lunch,,1,0,0,,,,16/Jun/25
+Westover,30/Jun/25,Organic Gluten Free Granola Bar,Snack,5,1,43,43,,,x,23/Jun/25
+Westover,1/Jul/25,Organic Gluten Free Granola Bar,Snack,6,1,43,43,,,x,23/Jun/25
+Westover,29/Jun/25,Organic Gluten Free Granola Minis,Snack,4,1,43,43,,,x,23/Jun/25
+Westover,2/Jul/25,Organic Gluten Free Granola Minis,Snack,7,1,43,43,,,x,23/Jun/25
+Westover,30/Jun/25,Peach Berry Crumble,Lunch Dessert,5,1,42,42,,x,,23/Jun/25
+Westover,28/Jun/25,Pear,Breakfast,3,0.5,24,12,,,x,23/Jun/25
+Macey,19/Jun/25,Peas and Carrots,Dinner,4,100,25,2500,,,,18/Jun/25
+Ying's,27/Jun/25,Peas and Carrots,Lunch,,75,6,600,,x,,23/Jun/25
+Dovercourt,19/Jun/25,Peas and Carrots,Dinner,4,100,25,2500,,,,18/Jun/25
+MIYM,27/Jun/25,Peas and Carrots,Lunch,,75,8,600,,x,,23/Jun/25
+Westover,29/Jun/25,Peas and Carrots,Dinner,4,100,43,4300,,x,,23/Jun/25
+Curlew,19/Jun/25,Peas and Carrots,Lunch,4,75,40,3000,,,Hot,19/Jun/25
+Bradford CHATS,19/Jun/25,Peas and Carrots,Lunch,,75,17,1275,,,,18/Jun/25
+Vaughan CHATS,19/Jun/25,Peas and Carrots,Lunch,,75,50,3750,,,,18/Jun/25
+Aurora CHATS,19/Jun/25,Peas and Carrots,Lunch,,75,24,1800,,,,18/Jun/25
+Westover,1/Jul/25,Peas and Corn,Dinner,6,100,43,4300,,x,,23/Jun/25
+Macey,21/Jun/25,Peas and Corn,Dinner,6,100,25,2500,,,,20/Jun/25
+Dovercourt,21/Jun/25,Peas and Corn,Dinner,6,100,25,2500,,,,20/Jun/25
+Macey,18/Jun/25,Penne Pasta,Dinner,3,140,23,3220,,,,15/Jun/25
+Ying's,26/Jun/25,Penne Pasta,Lunch,,100,6,900,,x,,23/Jun/25
+MIYM,26/Jun/25,Penne Pasta,Lunch,,100,9,900,,x,,23/Jun/25
+Dovercourt,18/Jun/25,Penne Pasta,Dinner,3,140,25,3500,,,,15/Jun/25
+Curlew,18/Jun/25,Penne Pasta,Lunch,3,105,40,4200,,,hot,18/Jun/25
+Vaughan CHATS,18/Jun/25,Penne Pasta,Lunch,,90,50,4500,,,,16/Jun/25
+Richmond Hill CHATS,18/Jun/25,Penne Pasta,Lunch,,90,17,1530,,,,16/Jun/25
+Bradford CHATS,18/Jun/25,Penne Pasta,Lunch,,90,21,1890,,,,16/Jun/25
+Westover,28/Jun/25,Penne Pasta,Dinner,3,140,24,3360,,x,,23/Jun/25
+Aurora CHATS,18/Jun/25,Penne Pasta,Lunch,,90,0,0,,,,16/Jun/25
+Aurora CHATS,19/Jun/25,Penne Pasta,Lunch R,,100,1,100,"Bill C. - Rice, Lettuce, Leafy Greens, Spinach",,,18/Jun/25
+Aurora CHATS,19/Jun/25,Penne Pasta,Lunch R,,100,1,100,"Eileen. - Banana, Corn, Berries, Seeds, Rice, Legumes, Cucumber, Peas, Tomato",,,18/Jun/25
+Westover,27/Jun/25,Plain Bagel,Breakfast,2,1,42,42,,,x,23/Jun/25
+Westover,1/Jul/25,Potato Salad - Dressing,Lunch,6,10,43,430,,,x,23/Jun/25
+Westover,1/Jul/25,Potato Salad - Vegetables,Lunch,6,90,43,3870,,,x,23/Jun/25
+Dovercourt,16/Jun/25,Roast Beef,Lunch,1,90,25,2250,,,,15/Jun/25
+Macey,16/Jun/25,Roast Beef,Lunch,1,90,23,2070,,,,15/Jun/25
+Dovercourt,17/Jun/25,Rye,Lunch,2,2,25,50,,,,15/Jun/25
+Macey,17/Jun/25,Rye,Lunch,2,2,23,46,,,,15/Jun/25
+Westover,2/Jul/25,Rye Bread,Lunch,7,2,42,84,,,x,23/Jun/25
+Dovercourt,22/Jun/25,Rye Bread,Lunch,7,2,25,50,,,,20/Jun/25
+Macey,22/Jun/25,Rye Bread,Lunch,7,2,23,46,,,,20/Jun/25
+Dovercourt,16/Jun/25,Saltine Crackers,Lunch,1,2,25,50,,,,15/Jun/25
+Macey,16/Jun/25,Saltine Crackers,Lunch,1,2,23,46,,,,15/Jun/25
+Dovercourt,17/Jun/25,Saltine Crackers,Lunch,2,2,25,50,,,,15/Jun/25
+Macey,17/Jun/25,Saltine Crackers,Lunch,2,2,23,46,,,,15/Jun/25
+Macey,18/Jun/25,Saltine Crackers,Lunch,3,2,23,46,,,,15/Jun/25
+Macey,19/Jun/25,Saltine Crackers,Lunch,4,2,23,46,,,,18/Jun/25
+Dovercourt,18/Jun/25,Saltine Crackers,Lunch,3,2,25,50,,,,15/Jun/25
+Macey,20/Jun/25,Saltine Crackers,Lunch,5,2,23,46,,,,18/Jun/25
+Dovercourt,19/Jun/25,Saltine Crackers,Lunch,4,2,25,50,,,,18/Jun/25
+Dovercourt,20/Jun/25,Saltine Crackers,Lunch,5,2,25,50,,,,18/Jun/25
+Westover,26/Jun/25,Saltine Crackers,Lunch,1,2,0,0,,,x,23/Jun/25
+Westover,28/Jun/25,Saltine Crackers,Lunch,3,2,0,0,,,x,23/Jun/25
+Westover,29/Jun/25,Saltine Crackers,Lunch,4,2,0,0,,,x,23/Jun/25
+Macey,21/Jun/25,Saltine Crackers,Lunch,6,2,23,46,,,,20/Jun/25
+Dovercourt,21/Jun/25,Saltine Crackers,Lunch,6,2,25,50,,,,20/Jun/25
+Westover,2/Jul/25,Saltine Crackers,Lunch,7,2,0,0,,,x,23/Jun/25
+Dovercourt,22/Jun/25,Saltine Crackers,Lunch,7,2,25,50,,,,20/Jun/25
+Macey,22/Jun/25,Saltine Crackers,Lunch,7,2,23,46,,,,20/Jun/25
+MIYM,26/Jun/25,Spice Snap Biscuit,Snack,,2,9,18,,,x,23/Jun/25
+Curlew,18/Jun/25,Spice Snap Biscuit,PM Snack,3,3,35,105,,,x,18/Jun/25
+Westover,26/Jun/25,Spice Snap Biscuit,Snack,1,3,42,126,,,x,23/Jun/25
+Westover,30/Jun/25,Spice Snap Biscuit,Snack,5,3,42,126,,,x,23/Jun/25
+Westover,30/Jun/25,Strawberry Applesauce,Lunch Dessert R,5,1,1,1,Gluten Free,,x,23/Jun/25
+Aurora CHATS,18/Jun/25,Strawberry Applesauce,Lunch R,,1,0,0,"Elaine C. - Tomato, Orange, Pork",,,16/Jun/25
+Westover,1/Jul/25,Strawberry Applesauce,Lunch Dessert R,6,1,1,1,Gluten Free,,x,23/Jun/25
+Curlew,20/Jun/25,Strawberry Applesauce,AM Snack R,5,1,1,1,Na'ay K - Vegan,,x,19/Jun/25
+Macey,20/Jun/25,Sub Bun,Lunch,5,1,23,23,,,,18/Jun/25
+Dovercourt,20/Jun/25,Sub Bun,Lunch,5,1,25,25,,,,18/Jun/25
+Westover,29/Jun/25,Sub Bun,Lunch,4,1.0,43,43,,,x,23/Jun/25
+Macey,18/Jun/25,Swiss Cheese,Lunch,3,1,23,23,,,,15/Jun/25
+Dovercourt,18/Jun/25,Swiss Cheese,Lunch,3,1,24,24,,,,15/Jun/25
+Westover,2/Jul/25,Swiss Cheese 14g,Lunch,7,2,43,86,,,x,23/Jun/25
+Westover,29/Jun/25,Tiramisu Cake,Dinner Dessert,4,1,42,42,,x,,23/Jun/25
+Dovercourt,16/Jun/25,Tofu and Gluten Free Pasta - no dairy,Dinner R,1,250,1,250,"375 - Dairy, Fish",,,15/Jun/25
+Macey,16/Jun/25,Tofu and Gluten Free Pasta - no dairy,Dinner R,1,250,1,250,122 - Gluten,,,15/Jun/25
+Macey,16/Jun/25,Tofu and Gluten Free Pasta - no dairy,Dinner R,1,250,1,250,253 - Dairy,,,15/Jun/25
+Aurora CHATS,19/Jun/25,Tofu and Sweet Potato Casserole,Lunch R,,170,1,170,"Eileen. - Banana, Corn, Berries, Seeds, Rice, Legumes, Cucumber, Peas, Tomato",,,18/Jun/25
+Dovercourt,16/Jun/25,Tofu Bowtie Pasta and Vegetables,Dinner,1,250,24,6000,,,,15/Jun/25
+Macey,16/Jun/25,Tofu Bowtie Pasta and Vegetables,Dinner,1,250,22,5500,,,,15/Jun/25
+Macey,17/Jun/25,Tomato - Whole  (1 = 4 servings),Lunch,2,0.25,25,6.3,,,,15/Jun/25
+Dovercourt,17/Jun/25,Tomato - Whole  (1 = 4 servings),Lunch,2,0.25,25,6.3,,,,15/Jun/25
+Richmond Hill CHATS,17/Jun/25,Tomato - Whole  (1 = 4 servings),Lunch,,0.25,0,0.0,,,,16/Jun/25
+Vaughan CHATS,17/Jun/25,Tomato - Whole  (1 = 4 servings),Lunch,,0.25,50,12.5,,,,16/Jun/25
+Bradford CHATS,17/Jun/25,Tomato - Whole  (1 = 4 servings),Lunch,,0.25,21,5.3,,,,16/Jun/25
+Aurora CHATS,17/Jun/25,Tomato - Whole  (1 = 4 servings),Lunch,,0.25,25,6.3,,,,16/Jun/25
+Macey,21/Jun/25,Tomato - Whole  (1 = 4 servings),Dinner,6,0.25,25,6.3,,,,20/Jun/25
+Dovercourt,21/Jun/25,Tomato - Whole  (1 = 4 servings),Dinner,6,0.25,25,6.3,,,,20/Jun/25
+Westover,1/Jul/25,Tomato - Whole  (1 = 4 servings),Dinner,6,0.25,43,10.8,,,x,23/Jun/25
+Dovercourt,22/Jun/25,Tomato - Whole  (1 = 4 servings),Lunch,7,0.25,25,6.3,,,,20/Jun/25
+Macey,22/Jun/25,Tomato - Whole  (1 = 4 servings),Lunch,7,0.25,25,6.3,,,,20/Jun/25
+Vaughan CHATS,18/Jun/25,Tomato Sauce,Lunch,,30,48,1440,,,,16/Jun/25
+Richmond Hill CHATS,18/Jun/25,Tomato Sauce,Lunch,,30,17,510,,,,16/Jun/25
+Bradford CHATS,18/Jun/25,Tomato Sauce,Lunch,,30,21,630,,,,16/Jun/25
+Aurora CHATS,18/Jun/25,Tomato Sauce,Lunch,,30,0,0,,,,16/Jun/25
+Westover,1/Jul/25,Triple Berry Crumble,Lunch Dessert,6,1,42,42,,x,,23/Jun/25
+Dovercourt,19/Jun/25,Tukrey Slices,Lunch,4,90,25,2250,,,,18/Jun/25
+Westover,26/Jun/25,Tuna Salad - dressing with spices,Lunch,1,13.4,43,576.2,,,x,23/Jun/25
+Westover,26/Jun/25,Tuna Salad - fish,Lunch,1,50.0,43,2150,,,x,23/Jun/25
+Westover,26/Jun/25,Tuna Salad - onion,Lunch,1,10.0,43,430,,,x,23/Jun/25
+Dovercourt,17/Jun/25,Turkey Bacon,Lunch,2,3,23,69,,,,15/Jun/25
+Macey,17/Jun/25,Turkey Bacon,Lunch,2,3,23,69,,,,15/Jun/25
+Westover,29/Jun/25,Turkey Bacon,Breakfast,4,3,43,129,,x,,23/Jun/25
+Macey,21/Jun/25,Turkey Burger,Dinner,6,1,22,22,,,,20/Jun/25
+Dovercourt,21/Jun/25,Turkey Burger,Dinner,6,1,25,25,,,,20/Jun/25
+Westover,1/Jul/25,Turkey Burger,Dinner,6,1,42,42,,x,,23/Jun/25
+Westover,27/Jun/25,Turkey Chili,Lunch,2,250,43,10750,,x,,23/Jun/25
+Westover,28/Jun/25,Turkey Noodle Soup,Lunch,7,250,23,5750,,x,,23/Jun/25
+Macey,19/Jun/25,Turkey Slices,Lunch,4,90,25,2250,,,,18/Jun/25
+Westover,2/Jul/25,Turkey Stew,Dinner,7,250,43,10750,,x,,23/Jun/25
+RH Saturday CHATS,21/Jun/25,Turkey Stew,Lunch,,170,10,1700,,,,18/Jun/25
+Curlew,20/Jun/25,Turkey Stew,Lunch,5,187.5,25,4687.5,,,Hot,20/Jun/25
+Aurora CHATS,20/Jun/25,Turkey Stew,Lunch,,170,18,3060,,,,18/Jun/25
+Bradford CHATS,20/Jun/25,Turkey Stew,Lunch,,170,17,2890,,,,18/Jun/25
+Richmond Hill CHATS,20/Jun/25,Turkey Stew,Lunch,,170,7,1190,,,,18/Jun/25
+Vaughan CHATS,20/Jun/25,Turkey Stew,Lunch,,170,46,7820,,,,18/Jun/25
+Macey,22/Jun/25,Turkey Stew,Dinner,7,250,23,5750,,,,20/Jun/25
+Dovercourt,22/Jun/25,Turkey Stew,Dinner,7,250,25,6250,,,,20/Jun/25
+Westover,29/Jun/25,Vanilla Pudding,Lunch Dessert R,4,1,1,1,Gluten Free,,x,23/Jun/25
+Westover,30/Jun/25,Vanilla Pudding,Dinner Dessert,5,1,43,43,,,x,23/Jun/25
+Westover,1/Jul/25,Vegetable Bowtie Pasta,Lunch,6,250,42,10500,,x,,23/Jun/25
+Macey,16/Jun/25,Vegetarian Burger,Lunch R,1,1,1,1,386 - Vegetarian,,,15/Jun/25
+Curlew,17/Jun/25,Vegetarian Burger,Lunch R,2,1,1,1,Amelia H - Vegetarian m,,x,17/Jun/25
+Curlew,17/Jun/25,Vegetarian Burger,Lunch R,2,1,1,1,Aminna T. - Beef,,x,17/Jun/25
+Curlew,17/Jun/25,Vegetarian Burger,Lunch R,2,1,1,1,Laya S - Vegetarian m/f,,x,17/Jun/25
+Curlew,17/Jun/25,Vegetarian Burger,Lunch R,2,1,1,1,Maryam D - Vegetarian m,,x,17/Jun/25
+Curlew,17/Jun/25,Vegetarian Burger,Lunch R,2,1,1,1,Mikaeel H - Vegetarian m,,x,17/Jun/25
+Curlew,17/Jun/25,Vegetarian Burger,Lunch R,2,1,1,1,Na'ay K - Vegan,,x,17/Jun/25
+Curlew,17/Jun/25,Vegetarian Burger,Lunch R,2,1,1,1,Ronith B. - Beef,,x,17/Jun/25
+Macey,17/Jun/25,Vegetarian Burger,Dinner R,2,1,1,1,386 - Vegetarian,,,15/Jun/25
+Curlew,17/Jun/25,Vegetarian Burger,Lunch R,2,1,1,1,Ruqayyan M - Vegetarian m,,x,17/Jun/25
+Curlew,17/Jun/25,Vegetarian Burger,Lunch R,2,1,1,1,Sai A.  - Beef,,x,17/Jun/25
+Macey,18/Jun/25,Vegetarian Burger,Lunch R,3,1,1,1,386 - Vegetarian,,,15/Jun/25
+Richmond Hill CHATS,17/Jun/25,Vegetarian Burger,Lunch R,,1,0,0,"Patricia J - Dairy, Vegetarian - no m/f",,,16/Jun/25
+Curlew,17/Jun/25,Vegetarian Burger,Lunch R,2,1,1,1,Samyukta B. - Beef,,x,17/Jun/25
+Curlew,17/Jun/25,Vegetarian Burger,Lunch R,2,1,1,1,Tarasha K - Vegetarian m/f,,x,17/Jun/25
+Curlew,17/Jun/25,Vegetarian Burger,Lunch R,2,1,1,1,Virat T - Vegetarian m/f,,x,17/Jun/25
+Curlew,17/Jun/25,Vegetarian Burger,Lunch R,2,1,1,1,Yusuf M - Vegetarian m,,x,17/Jun/25
+Richmond Hill CHATS,17/Jun/25,Vegetarian Burger,Lunch R,,1,0,0,Yeshembet N - Vegan,,,16/Jun/25
+Vaughan CHATS,17/Jun/25,Vegetarian Burger,Lunch R,,1,1,1,Kalash V. - Vegetarian - no meat/fish,,,16/Jun/25
+Vaughan CHATS,17/Jun/25,Vegetarian Burger,Lunch R,,1,1,1,Lashmi S. M. - Vegetarian - no meat/fish,,,16/Jun/25
+Aurora CHATS,17/Jun/25,Vegetarian Burger,Lunch R,,1,1,1,"Afsar F. - Beef, Pork",,,16/Jun/25
+Aurora CHATS,17/Jun/25,Vegetarian Burger,Lunch R,,1,1,1,Gerry M. - Vegetarian m/f,,,16/Jun/25
+Macey,21/Jun/25,Vegetarian Burger,Dinner R,6,1,1,1,386 - Vegetarian,,,20/Jun/25
+Macey,18/Jun/25,Vegetarian Meatballs in Tomato Sauce,Dinner R,3,180,1,180,386 - Vegetarian,,,15/Jun/25
+MIYM,26/Jun/25,Vegetarian Meatballs in Tomato Sauce,Lunch R,,135,1,135,Zyair D. - Vegetarian m/f,x,,23/Jun/25
+Curlew,18/Jun/25,Vegetarian Meatballs in Tomato Sauce,Lunch R,3,105,1,105,Amelia H - Vegetarian m,,x,18/Jun/25
+Curlew,18/Jun/25,Vegetarian Meatballs in Tomato Sauce,Lunch R,3,105,1,105,Laya S - Vegetarian m/f,,x,18/Jun/25
+Curlew,18/Jun/25,Vegetarian Meatballs in Tomato Sauce,Lunch R,3,105,1,105,Maryam D - Vegetarian m,,x,18/Jun/25
+Curlew,18/Jun/25,Vegetarian Meatballs in Tomato Sauce,Lunch R,3,105,1,105,Mikaeel H - Vegetarian m,,x,18/Jun/25
+Curlew,18/Jun/25,Vegetarian Meatballs in Tomato Sauce,Lunch R,3,105,1,105,Na'ay K - Vegan,,x,18/Jun/25
+Curlew,18/Jun/25,Vegetarian Meatballs in Tomato Sauce,Lunch R,3,105,1,105,Ruqayyan M - Vegetarian m,,x,18/Jun/25
+Curlew,18/Jun/25,Vegetarian Meatballs in Tomato Sauce,Lunch R,3,105,1,105,Tarasha K - Vegetarian m/f,,x,18/Jun/25
+Curlew,18/Jun/25,Vegetarian Meatballs in Tomato Sauce,Lunch R,3,105,1,105,Virat T - Vegetarian m/f,,x,18/Jun/25
+Curlew,18/Jun/25,Vegetarian Meatballs in Tomato Sauce,Lunch R,3,105,1,105,Yusuf M - Vegetarian m,,x,18/Jun/25
+Vaughan CHATS,18/Jun/25,Vegetarian Meatballs in Tomato Sauce,Lunch R,,135,1,135,Lashmi S. M. - Vegetarian - no meat/fish,,,16/Jun/25
+Vaughan CHATS,18/Jun/25,Vegetarian Meatballs in Tomato Sauce,Lunch R,,135,1,135,Urmilla T. - Vegetarian - no meat/fish,,,16/Jun/25
+Ying's,25/Jun/25,Watermelon,Lunch,,0.07,6,0.49,,,x,23/Jun/25
+MIYM,25/Jun/25,Watermelon,Lunch,,0.07,7,0.49,,,x,23/Jun/25
+Curlew,17/Jun/25,Watermelon,Lunch,2,0.07,40,2.8,,,x,17/Jun/25
+Westover,26/Jun/25,Watermelon,Breakfast,1,0.05,43,2.15,,,x,23/Jun/25
+Westover,1/Jul/25,Watermelon,Snack,6,0.05,43,2.15,,,x,23/Jun/25
+Curlew,16/Jun/25,White Fish Bowtie Pasta,Lunch,1,187.5,36,6750,,,Hot,16/Jun/25
+MIYM,24/Jun/25,White Fish Bowtie Pasta,Lunch,,170,8,1360,,x,,23/Jun/25
+Ying's,24/Jun/25,White Fish Bowtie Pasta,Lunch,,170,6,1360,,x,,23/Jun/25
+Richmond Hill CHATS,16/Jun/25,White Fish Bowtie Pasta,Lunch,,170,19,3230,,,,16/Jun/25
+Bradford CHATS,16/Jun/25,White Fish Bowtie Pasta,Lunch,,170,16,2720,,,,16/Jun/25
+Vaughan CHATS,16/Jun/25,White Fish Bowtie Pasta,Lunch,,170,28,4760,,,,16/Jun/25
+Aurora CHATS,16/Jun/25,White Fish Bowtie Pasta,Lunch,,170,19,3230,,,,16/Jun/25
+Aurora CHATS,16/Jun/25,"White fish bowtie pasta  - no dairy, legumes, tomato, peppers",Lunch R,,170,1,170,Aki K. - Dairy,,,16/Jun/25
+Aurora CHATS,16/Jun/25,"White fish bowtie pasta  - no dairy, legumes, tomato, peppers",Lunch R,,170,1,170,"Charlie B. - Seeds, Berries, Corn, Cucumber, Rice, Peas, Legumes, Tomato",,,16/Jun/25
+Aurora CHATS,16/Jun/25,"White fish bowtie pasta  - no dairy, legumes, tomato, peppers",Lunch R,,170,1,170,"Eileen. - Banana, Corn, Berries, Seeds, Rice, Legumes, Cucumber, Peas, Tomato",,,16/Jun/25
+Aurora CHATS,16/Jun/25,"White fish bowtie pasta  - no dairy, legumes, tomato, peppers",Lunch R,,170,1,170,"Vincenza M. - Banana, Citrus, Potato, Tomato, Legumes, Rice",,,16/Jun/25
+Westover,26/Jun/25,White Fish Bowtie Pasta and Vegetables,Dinner,1,250,42,10500,,x,,23/Jun/25
+Richmond Hill CHATS,16/Jun/25,White Fish Bowtie Pasta Sauce,Lunch,,30,20,600,,,,16/Jun/25
+Bradford CHATS,16/Jun/25,White Fish Bowtie Pasta Sauce,Lunch,,30,16,480,,,,16/Jun/25
+Vaughan CHATS,16/Jun/25,White Fish Bowtie Pasta Sauce,Lunch,,30,28,840,,,,16/Jun/25
+Aurora CHATS,16/Jun/25,White Fish Bowtie Pasta Sauce,Lunch,,30,20,600,,,,16/Jun/25
+Westover,29/Jun/25,Whole Grain Pancakes,Breakfast,4,2,42,84,,x,,23/Jun/25
+Westover,30/Jun/25,Whole Wheat Bagel,Breakfast,5,1,42,42,,x,,23/Jun/25
+Macey,19/Jun/25,Whole Wheat Bread,Lunch,4,2,23,46,,,,18/Jun/25
+Dovercourt,19/Jun/25,Whole Wheat Bread,Lunch,4,2,25,50,,,,18/Jun/25
+Dovercourt,22/Jun/25,Whole Wheat Bread,Dinner R,7,1,1,1,"375- Dairy, Fish",,,20/Jun/25
+Westover,26/Jun/25,Whole Wheat Bread,Breakfast,1,1,42,42,,,x,23/Jun/25
+Westover,28/Jun/25,Whole Wheat Bread,Lunch,3,2,23,46,,,x,23/Jun/25
+MIYM,25/Jun/25,Whole Wheat Pita,Snack,,1,7,7,,,x,23/Jun/25
+Curlew,17/Jun/25,Whole Wheat Pita,PM Snack,2,0.5,40,20,,,x,17/Jun/25
+MIYM,27/Jun/25,Yogurt - Assorted Flavours,Snack,,1,8,8,,,x,23/Jun/25
+Curlew,19/Jun/25,Yogurt - Assorted Flavours,PM Snack,4,1,34,34,,,x,19/Jun/25
+Curlew,20/Jun/25,Yogurt - Assorted Flavours,AM Snack,5,1,34,34,,,x,19/Jun/25
+Westover,27/Jun/25,Yogurt - Assorted Flavours,Breakfast,2,1,43,43,,,x,23/Jun/25
+Westover,28/Jun/25,Yogurt - Assorted Flavours,Snack,3,1,24,24,,,x,23/Jun/25
+Westover,29/Jun/25,Yogurt - Assorted Flavours,Snack,4,1,43,43,,,x,23/Jun/25
+Westover,1/Jul/25,Yogurt - Assorted Flavours,Snack,6,1,43,43,,,x,23/Jun/25
+Westover,2/Jul/25,Yogurt - Assorted Flavours,Snack,7,1,43,43,,,x,23/Jun/25
