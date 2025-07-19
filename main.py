@@ -6,6 +6,7 @@ from jinja2 import Template
 import html
 from datetime import datetime
 import os
+from weasyprint import HTML
 
 
 
@@ -87,8 +88,8 @@ def generate_packing_slips():
 
         # Create as many packing slips as there are unique dates
         for date in order_dates:
-           
-
+            
+            # Create the html template for the packing slips
             template = Template("""
                
                 <!DOCTYPE html>
@@ -184,70 +185,13 @@ def generate_packing_slips():
                             <p><strong>Checked By:</strong> ____________________________</p>
                             <p><strong>Date:</strong> ____________________________</p>
                             <div class="signature-line"></div>
-                            <p><em>Print Name</em></p>
-                            <p><em>Signature</em></p>
+                            <p><em>Print Name:</em></p>
+                            <p><em>Signature:</em></p>
                         </div>
                     </div>
 
                 </body>
                 </html>
-
-            """)
-
-
-
-
-
-
-            # Create the html template for the packing slips
-            template_1 = Template("""
-
-                <h1>Packing Slip</h1>
-
-                <p>
-                    <strong>Client:</strong> {{ client }}
-                </p>
-
-                <p>
-                    <strong>Shipment Date:</strong> {{ date }}
-                </p>
-
-                <table border="1" cellpadding="5">
-
-                    <tr>
-                        <th>Serving Date</th>
-
-                        <th>Item</th>
-
-                        <th>Meal</th>
-
-                        <th>Day</th>
-
-                        <th>Order Amount</th>
-
-                        <th>Client</th>
-
-                        <th>Quantity Shipped</th>
-                    </tr>
-                        {% for order in orders %}
-                            <tr>    
-                                <td>{{ order['Serving Date'] or '' }}</td>
-
-                                <td>{{ order['Item'] or '' }}</td>
-
-                                <td>{{ order['Meal'] or '' }}
-
-                                <td>{{ order['Day'] or '' }}
-
-                                <td>{{ order['Order Amount'] or '' }}
-                                
-                                <td>{{ order['Client'] or '' }}
-
-                                <td>{{ order['Quantity to Produce/Ship'] or '' }}
-                                </td>
-                            </tr>
-                        {% endfor %}
-                </table>
 
             """)
 
@@ -258,9 +202,17 @@ def generate_packing_slips():
                 orders=orders
             )
 
+
+
+
             # Write html data to an html file  
             os.makedirs(f"data/{customer}", exist_ok=True)
             os.makedirs(f"data/{customer}/packing_slips", exist_ok=True)
+            
+
+            HTML(string=html).write_pdf(f"data/{customer}/packing_slips/{customer}_{str(date.replace('/', '_'))}.pdf")
+    
+
             with open(f"data/{customer}/packing_slips/{customer}_{str(date.replace('/', '_'))}.html", "w") as f:
                 f.write(html)
 
