@@ -11,6 +11,7 @@ import os
 
 
 # Establish a database conneciton
+os.makedirs("instance", exist_ok=True)
 conn = sqlite3.connect("instance/prod.db")
 conn.row_factory = sqlite3.Row
 cur = conn.cursor()
@@ -25,6 +26,7 @@ if len(sys.argv) > 1 and sys.argv[1].lower() == "--get":
     response = requests.get(url)
 
 
+    os.makedirs("data", exist_ok=True)
     with open("data/production.csv", "wb") as f:
         f.write(response.content)
 
