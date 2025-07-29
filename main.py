@@ -199,10 +199,8 @@ def generate_packing_slips():
             html = template.render(
                 client=customer,
                 date=date,
-                orders=orders
+                orders=list(filter(lambda o: o["Shipment Date"] == date, orders))
             )
-
-
 
 
             # Write html data to an html file  
@@ -221,22 +219,60 @@ def generate_packing_slips():
 
 
 
-# TODO: Create Invoices
-def generate_invoices():
-    pass
+
+
+# TODO: Generate and export .xlsx file formats that match the label format in the spreadsheet
+def generate_labels():
+    df_original = pd.read_sql_query('''SELECT Customer, "Serving Date", Client, Item, Meal, Day, "Portion Size grams or each", "Order Amount", "Quantity to Produce/Ship" FROM production''', conn)
+
+    # These are the list of columns that don't have a trailing column with the column in it (I don't fucking know)
+    excluded_cols = ["Customer", "Serving Date", "Client"]
+
+    # Get the customers 
+    customers_raw = cur.execute('SELECT Customer FROM production').fetchall()
+    customers = list(set([col[0] for col in customers_raw]))
+
+    # Generate a new label file for each unique customer
+    for customer in customers:
+        df = df_original.query("Customer == @customer")
+            
+        if customer == "Westover":
+            excluded_cols.remove("Serving Date")
+        else:
+            df = df.drop("Day", axis="columns")
+
+        df = df.rename(columns=({'Portion Size grams or each': 'Portion Size'}))
+
+        cols = [col for col in df.columns if col not in excluded_cols]
+
+
+        for i, col in enumerate(cols):
+            df.insert(loc=df.columns.get_loc(col), column=" " * i, value=[col for _ in range(len(df[col]))])
+
+        df.insert(loc=len(list(df.columns)), column=None, value="# ____ of ____")
+
+        df.to_excel(f"data/{customer}/{str(customer.replace('/', '_'))}_labels.xlsx", index=False)
+
+
+
 
 
 
 
 
 # TODO: Create shopping list
+def generate_shopping_list():
+    pass
+
+
+# TODO: Link to Google Drive
+# - Get with google api if access becomes private
+# - Upload to drive
+# - Share folders with operations manager
 
 
 
-# Export to readable data format
 
 
-
-
-if __name__ == "__main__":
-    generate_packing_slips()
+generate_packing_slips()
+generate_labels()
