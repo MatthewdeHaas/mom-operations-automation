@@ -236,33 +236,52 @@ def generate_labels():
     for customer in customers:
         df = df_original.query("Customer == @customer")
             
+        # Special case for Westover
         if customer == "Westover":
             excluded_cols.remove("Serving Date")
         else:
             df = df.drop("Day", axis="columns")
-
+        
+        # Clean up long name
         df = df.rename(columns=({'Portion Size grams or each': 'Portion Size'}))
 
+        # get a list of column names to itereate over
         cols = [col for col in df.columns if col not in excluded_cols]
 
-
+        # insert labels as columns
         for i, col in enumerate(cols):
             df.insert(loc=df.columns.get_loc(col), column=" " * i, value=[col for _ in range(len(df[col]))])
 
+        # Insert this last fucker
         df.insert(loc=len(list(df.columns)), column=None, value="# ____ of ____")
 
+        # Export to excel
         df.to_excel(f"data/{customer}/{str(customer.replace('/', '_'))}_labels.xlsx", index=False)
 
 
 
 
 
-
-
-
-# TODO: Create shopping list
+# TODO: Create a new .xlsx file that contains a column for ingredients and quantity
 def generate_shopping_list():
-    pass
+    # Fetch data
+    data = cur.execute('SELECT Item, "Portion Size grams or each", "Order Amount" FROM production').fetchall()
+   
+    # Create a unique list of items (foods) that can be looped over
+    items = list(set([e["Item"] for e in data]))
+
+    foods = dict() 
+
+    # Calculate the amount of each food
+    for item in items:
+        foods[item] = sum([e["Portion Size grams or each"] * e["Order Amount"] for e in data if e["Item"] == item])
+
+    
+    # Export as .xlsx
+    df = pd.DataFrame({'Item': foods.keys(), 'Quantity': foods.values()})
+    df.to_excel(f"data/shopping_list.xlsx", index=False)
+
+
 
 
 # TODO: Link to Google Drive
@@ -274,5 +293,6 @@ def generate_shopping_list():
 
 
 
-generate_packing_slips()
-generate_labels()
+# generate_packing_slips()
+# generate_labels()
+generate_shopping_list()
