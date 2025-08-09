@@ -6,35 +6,26 @@ from jinja2 import Template
 import html
 from datetime import datetime
 import os
-from weasyprint import HTML
+# from weasyprint import HTML
 
 
+def add_week(url, week):
+    # Get data from the google sheet
+    response = requests.get(parse_url(url))
 
-
-# Establish a database conneciton
-os.makedirs("instance", exist_ok=True)
-conn = sqlite3.connect("instance/prod.db")
-conn.row_factory = sqlite3.Row
-cur = conn.cursor()
-
-
-# Get data from the google sheet
-if len(sys.argv) > 1 and sys.argv[1].lower() == "--get":
-    sheet_id = "1y0dLkj7M99k3MNYZ2NQj5Z_epRBSycrk"
-    gid = "891988535"
-    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&gid={gid}"
-
-    response = requests.get(url)
-
-
+    # Store .csv response locally
     os.makedirs("data", exist_ok=True)
-    with open("data/production.csv", "wb") as f:
+    with open(f"data/week_{4}.csv", "wb") as f:
         f.write(response.content)
 
-    cur.execute("DROP TABLE IF EXISTS production")
 
-    cur.execute("""
-        CREATE TABLE IF NOT EXISTS production (
+    # Drop the table if it exists already
+    # NOTE: If the table exist, the user should get a warning if they want to overwrite existing data
+    cur.execute(f"DROP TABLE IF EXISTS week_{week}")
+
+    # Create a new table for the repsonse named after the given week
+    cur.execute(f"""
+        CREATE TABLE IF NOT EXISTS week_{week} (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             Customer TEXT,
             "Serving Date" TEXT,
@@ -52,16 +43,29 @@ if len(sys.argv) > 1 and sys.argv[1].lower() == "--get":
 
 
     # Convert .csv format to .sql
-    df = pd.read_csv("data/production.csv")
-    df.to_sql("production", conn, if_exists="replace")
+    df = pd.read_csv(f"data/week_{week}.csv")
+    df.to_sql(f"week_{week}", conn, if_exists="replace")
 
+
+
+# Returns the relavent infomation for exporting data from a google sheet from the url
+def parse_url(url):
+
+    sheet_id = url[url.index("/d/") + len("/d/"):url.index("/edit?")]
+
+    gid = url[url.index("#gid=") + len("#gid="):]
+    
+    return f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&gid={gid}"
+
+
+print(parse_url("https://docs.google.com/spreadsheets/d/14yTPn4sOEHLdj5qgRa4BFRFE_EhBwDVe/edit?gid=891988535#gid=891988535"))
 
 
 # TODO: Create Packing Slips - DONE
-def generate_packing_slips():
+def generate_packing_slips(week):
 
     # Get all rows in the Customer column
-    customers_raw = cur.execute('SELECT Customer FROM production').fetchall()
+    customers_raw = cur.execute(f'SELECT Customer FROM week_{week}').fetchall()
 
     # Get unique customers
     customers = list(set([col[0] for col in customers_raw]))
@@ -71,10 +75,10 @@ def generate_packing_slips():
         # Get a list of unique dates
         order_dates = list()
 
-        orders = cur.execute('''
+        orders = cur.execute(f'''
         SELECT 
         "Customer", "Serving Date", "Item", "Meal", "Day", "Order Amount", "Quantity", Client, "Quantity to Produce/Ship", "Shipment Date" 
-        FROM production 
+        FROM week_{week}
         WHERE Customer = ?''', (customer, )).fetchall()
 
         # Populate the list with unqiue date entires
@@ -208,7 +212,7 @@ def generate_packing_slips():
             os.makedirs(f"data/{customer}/packing_slips", exist_ok=True)
             
 
-            HTML(string=html).write_pdf(f"data/{customer}/packing_slips/{customer}_{str(date.replace('/', '_'))}.pdf")
+            # HTML(string=html).write_pdf(f"data/{customer}/packing_slips/{customer}_{str(date.replace('/', '_'))}.pdf")
     
 
             with open(f"data/{customer}/packing_slips/{customer}_{str(date.replace('/', '_'))}.html", "w") as f:
@@ -222,14 +226,14 @@ def generate_packing_slips():
 
 
 # TODO: Generate and export .xlsx file formats that match the label format in the spreadsheet
-def generate_labels():
-    df_original = pd.read_sql_query('''SELECT Customer, "Serving Date", Client, Item, Meal, Day, "Portion Size grams or each", "Order Amount", "Quantity to Produce/Ship" FROM production''', conn)
+def generate_labels(week):
+    df_original = pd.read_sql_query(f'''SELECT Customer, "Serving Date", Client, Item, Meal, Day, "Portion Size grams or each", "Order Amount", "Quantity to Produce/Ship" FROM week_{week}''', conn)
 
     # These are the list of columns that don't have a trailing column with the column in it (I don't fucking know)
     excluded_cols = ["Customer", "Serving Date", "Client"]
 
     # Get the customers 
-    customers_raw = cur.execute('SELECT Customer FROM production').fetchall()
+    customers_raw = cur.execute(f'SELECT Customer FROM week_{week}').fetchall()
     customers = list(set([col[0] for col in customers_raw]))
 
     # Generate a new label file for each unique customer
@@ -263,9 +267,9 @@ def generate_labels():
 
 
 # TODO: Create a new .xlsx file that contains a column for ingredients and quantity
-def generate_shopping_list():
+def generate_shopping_list(week):
     # Fetch data
-    data = cur.execute('SELECT Item, "Portion Size grams or each", "Order Amount" FROM production').fetchall()
+    data = cur.execute(f'SELECT "Item", "Portion Size grams or each", "Order Amount" FROM week_{week}').fetchall()
    
     # Create a unique list of items (foods) that can be looped over
     items = list(set([e["Item"] for e in data]))
@@ -282,17 +286,22 @@ def generate_shopping_list():
     df.to_excel(f"data/shopping_list.xlsx", index=False)
 
 
+def get_data(url, week):
+    # Create an entry for the given url and week
+    add_week(url, week)
+
+    # Create packing slips, labels and shopping list and store them in the 'data' directory
+    generate_packing_slips(week)
+    generate_labels(week)
+    generate_shopping_list(week)
 
 
-# TODO: Link to Google Drive
-# - Get with google api if access becomes private
-# - Upload to drive
-# - Share folders with operations manager
 
+# Establish a database conneciton
+# TODO: Change when the Flask is serving content - should be creating a reference to the singleton every time db is invoked :(
+os.makedirs("instance", exist_ok=True)
+conn = sqlite3.connect("instance/prod.db")
+conn.row_factory = sqlite3.Row
+cur = conn.cursor()
 
-
-
-
-# generate_packing_slips()
-# generate_labels()
-generate_shopping_list()
+get_data("https://docs.google.com/spreadsheets/d/14yTPn4sOEHLdj5qgRa4BFRFE_EhBwDVe/edit?gid=891988535#gid=891988535", 4)
