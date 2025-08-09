@@ -8,6 +8,11 @@
 
 ### Website
 - [ ] Add Flask boilerplate and link to the database used for storing tables currently
+  - [x] __init__.py
+  - [x] db.py
+  - [ ] routes.py
+  - [x] static/
+  - [x] templates/
 - [ ] Add basic front-end functionality and implement database reads/writes from the website instead of just running a python file
 
 ### Hosting

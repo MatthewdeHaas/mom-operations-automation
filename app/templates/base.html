@@ -1,0 +1,37 @@
+<!doctype html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- HTMX -->
+  <script src="https://unpkg.com/htmx.org@2.0.3"></script>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Alpine.js -->
+  <script src="//unpkg.com/alpinejs" defer></script>
+
+
+</head>
+
+<html class="font-light h-full">
+
+  <body class="h-full" hx-boost="true">
+
+    <div class="flex flex-col justify-center items-center space-y-4">
+
+      <p class="text-3xl font-bold">
+        MOM Operations
+      <p>
+
+      <hr class="w-full border-black">
+
+      {% block body %}
+      {% endblock %}
+
+    </div>
+
+  </body>
+
+</html>
