@@ -7,23 +7,29 @@ import html
 from datetime import datetime
 import os
 # from weasyprint import HTML
+from app.db import get_db
 
 
+# Create a new table for the repsonse named after the given week
 def add_week(url, week):
+
+    # Establish a database conneciton
+    db = get_db()
+    cur = db.cursor()
+
     # Get data from the google sheet
     response = requests.get(parse_url(url))
 
     # Store .csv response locally
     os.makedirs("data", exist_ok=True)
-    with open(f"data/week_{4}.csv", "wb") as f:
+    with open(f"data/week_{week}.csv", "wb") as f:
         f.write(response.content)
 
 
     # Drop the table if it exists already
-    # NOTE: If the table exist, the user should get a warning if they want to overwrite existing data
     cur.execute(f"DROP TABLE IF EXISTS week_{week}")
 
-    # Create a new table for the repsonse named after the given week
+    # Create new table
     cur.execute(f"""
         CREATE TABLE IF NOT EXISTS week_{week} (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -41,11 +47,11 @@ def add_week(url, week):
         )
     """)
 
-
     # Convert .csv format to .sql
     df = pd.read_csv(f"data/week_{week}.csv")
-    df.to_sql(f"week_{week}", conn, if_exists="replace")
-
+    df.to_sql(f"week_{week}", db, if_exists="replace", index=False)
+   
+    db.commit()
 
 
 # Returns the relavent infomation for exporting data from a google sheet from the url
@@ -59,15 +65,19 @@ def parse_url(url):
 
 
 
-# TODO: Create Packing Slips - DONE
 def generate_packing_slips(week):
 
+    # Establish a database conneciton
+    db = get_db()
+    cur = db.cursor()
+
     # Get all rows in the Customer column
-    customers_raw = cur.execute(f'SELECT Customer FROM week_{week}').fetchall()
+    data = cur.execute(f'SELECT Customer FROM week_{week}').fetchall()
 
     # Get unique customers
-    customers = list(set([col[0] for col in customers_raw]))
+    customers = list(set([d["Customer"] for d in data]))
 
+    # Create packing slips for each customer
     for customer in customers:
 
         # Get a list of unique dates
@@ -90,10 +100,10 @@ def generate_packing_slips(week):
 
         # Create as many packing slips as there are unique dates
         for date in order_dates:
-            
+
             # Create the html template for the packing slips
             template = Template("""
-               
+
                 <!DOCTYPE html>
                 <html>
                 <head>
@@ -171,7 +181,7 @@ def generate_packing_slips(week):
                                     <td>{{ order['Day'] or '' }}
 
                                     <td>{{ order['Order Amount'] or '' }}
-                                    
+
                                     <td>{{ order['Client'] or '' }}
 
                                     <td>{{ order['Quantity to Produce/Ship'] or '' }}
@@ -208,31 +218,31 @@ def generate_packing_slips(week):
             # Write html data to an html file  
             os.makedirs(f"data/{customer}", exist_ok=True)
             os.makedirs(f"data/{customer}/packing_slips", exist_ok=True)
-            
+
 
             # HTML(string=html).write_pdf(f"data/{customer}/packing_slips/{customer}_{str(date.replace('/', '_'))}.pdf")
-    
+
 
             with open(f"data/{customer}/packing_slips/{customer}_{str(date.replace('/', '_'))}.html", "w") as f:
                 f.write(html)
 
-
-
-
-
-
-
-
-# TODO: Generate and export .xlsx file formats that match the label format in the spreadsheet
 def generate_labels(week):
-    df_original = pd.read_sql_query(f'''SELECT Customer, "Serving Date", Client, Item, Meal, Day, "Portion Size grams or each", "Order Amount", "Quantity to Produce/Ship" FROM week_{week}''', conn)
+
+    # Establish a database conneciton
+    db = get_db()
+    cur = db.cursor()
+
+    df_original = pd.read_sql_query(f'''SELECT Customer, "Serving Date", Client, Item, Meal, Day, "Portion Size grams or each", "Order Amount", "Quantity to Produce/Ship" FROM week_{week}''', db)
 
     # These are the list of columns that don't have a trailing column with the column in it (I don't fucking know)
     excluded_cols = ["Customer", "Serving Date", "Client"]
 
-    # Get the customers 
-    customers_raw = cur.execute(f'SELECT Customer FROM week_{week}').fetchall()
-    customers = list(set([col[0] for col in customers_raw]))
+    # Get all rows in the Customer column
+    data = cur.execute(f'SELECT Customer FROM week_{week}').fetchall()
+
+    # Get unique customers
+    customers = list(set([d["Customer"] for d in data]))
+
 
     # Generate a new label file for each unique customer
     for customer in customers:
@@ -266,11 +276,16 @@ def generate_labels(week):
 
 # TODO: Create a new .xlsx file that contains a column for ingredients and quantity
 def generate_shopping_list(week):
+
+    # Establish a database conneciton
+    db = get_db()
+    cur = db.cursor()
+
     # Fetch data
     data = cur.execute(f'SELECT "Item", "Portion Size grams or each", "Order Amount" FROM week_{week}').fetchall()
    
     # Create a unique list of items (foods) that can be looped over
-    items = list(set([e["Item"] for e in data]))
+    items = list(set([d["Item"] for d in data]))
 
     foods = dict() 
 
@@ -284,7 +299,9 @@ def generate_shopping_list(week):
     df.to_excel(f"data/shopping_list.xlsx", index=False)
 
 
+
 def get_data(url, week):
+
     # Create an entry for the given url and week
     add_week(url, week)
 
@@ -295,32 +312,6 @@ def get_data(url, week):
 
 
 
-# Establish a database conneciton
-# TODO: Change when the Flask is serving content - should be creating a reference to the singleton every time db is invoked :(
-os.makedirs("instance", exist_ok=True)
-conn = sqlite3.connect("instance/prod.db")
-conn.row_factory = sqlite3.Row
-cur = conn.cursor()
-
-# get_data("https://docs.google.com/spreadsheets/d/14yTPn4sOEHLdj5qgRa4BFRFE_EhBwDVe/edit?gid=891988535#gid=891988535", 4)
-
-# cur.execute('''CREATE TABLE IF NOT EXISTS user (
-#     id INTEGER PRIMARY KEY AUTOINCREMENT, 
-#     username TEXT NOT NULL, 
-#     password TEXT NOT NULL
-#     );
-# ''')
-# cur.execute('''INSERT INTO user (username, password) 
-#                 VALUES("sam_king", "asdf1234")''')
 
 
-data = cur.execute("SELECT * FROM user").fetchall()
 
-
-conn.commit()
-
-for d in data:
-    print(d["username"], d["password"])
-
-
-conn.close()

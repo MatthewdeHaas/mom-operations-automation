@@ -2,6 +2,7 @@ from flask import Blueprint, url_for, render_template, render_template_string, s
 from app.db import get_db
 import json
 from functools import wraps
+from app.preprocess_data import get_data
 
 home = Blueprint('home', __name__, template_folder='templates')
 
@@ -36,10 +37,6 @@ def login():
     cur = db.cursor()
     
     user = cur.execute("SELECT * FROM user WHERE username = ?", (username, )).fetchone()
-    users = cur.execute("SELECT * FROM user").fetchall()
-    print("\n\n\n")
-    for u in users:
-        print(u["username"], ["password"])
 
     if user is None:
         return "Invalid username"
@@ -68,8 +65,8 @@ def dashboard():
 def generate_data():
 
     url = request.form.get("url")
-    week = request.form.get("week")
+    week = int(request.form.get("week"))
     
-    print(url, week)
+    get_data(url, week)
     
     return "Files generated. Check your email!"
