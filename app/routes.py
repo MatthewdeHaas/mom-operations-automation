@@ -6,8 +6,6 @@ from functools import wraps
 home = Blueprint('home', __name__, template_folder='templates')
 
 
-
-
 def requires_auth(f):
     @wraps(f)
     def decorated(*args, **kwargs):
@@ -19,7 +17,6 @@ def requires_auth(f):
     return decorated
 
 
-
 @home.route("/")
 def index():
 
@@ -27,7 +24,6 @@ def index():
         return redirect(url_for("home.dashboard"))
 
     return render_template("index.html")
-
 
 
 @home.route("/login", methods=["GET", "POST"])
@@ -61,14 +57,19 @@ def login():
     return r
 
 
-
-
-
 @home.route("/dashboard", methods=["GET", "POST"])
 @requires_auth
 def dashboard():
-    return render_template("home.html")
+    return render_template("dashboard.html")
 
 
+@home.route("/generate_data", methods=["GET", "POST"])
+@requires_auth
+def generate_data():
 
-
+    url = request.form.get("url")
+    week = request.form.get("week")
+    
+    print(url, week)
+    
+    return "Files generated. Check your email!"
