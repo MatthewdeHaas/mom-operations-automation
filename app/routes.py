@@ -1,9 +1,24 @@
 from flask import Blueprint, url_for, render_template, render_template_string, session, request, redirect, make_response, current_app
 from app.db import get_db
 import json
-
+from functools import wraps
 
 home = Blueprint('home', __name__, template_folder='templates')
+
+
+
+
+def requires_auth(f):
+    @wraps(f)
+    def decorated(*args, **kwargs):
+        if not session.get("user"):
+            return redirect(url_for('home.index'))
+
+        return f(*args, **kwargs)
+
+    return decorated
+
+
 
 @home.route("/")
 def index():
@@ -18,10 +33,8 @@ def index():
 @home.route("/login", methods=["GET", "POST"])
 def login():
 
-
     username = request.form.get("username")
     password = request.form.get("password")
-
 
     db = get_db()
     cur = db.cursor()
@@ -51,7 +64,11 @@ def login():
 
 
 
-
 @home.route("/dashboard", methods=["GET", "POST"])
+@requires_auth
 def dashboard():
     return render_template("home.html")
+
+
+
+
