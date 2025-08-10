@@ -300,7 +300,7 @@ def generate_shopping_list(week):
 
 
 
-def get_data(url, week):
+def generate_data(url, week):
 
     # Create an entry for the given url and week
     add_week(url, week)

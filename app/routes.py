@@ -2,7 +2,8 @@ from flask import Blueprint, url_for, render_template, render_template_string, s
 from app.db import get_db
 import json
 from functools import wraps
-from app.preprocess_data import get_data
+from app.preprocess_data import generate_data
+from app.email_data import email_data
 
 home = Blueprint('home', __name__, template_folder='templates')
 
@@ -60,13 +61,24 @@ def dashboard():
     return render_template("dashboard.html")
 
 
-@home.route("/generate_data", methods=["GET", "POST"])
+@home.route("/generate", methods=["GET", "POST"])
 @requires_auth
-def generate_data():
+def generate():
 
     url = request.form.get("url")
     week = int(request.form.get("week"))
     
-    get_data(url, week)
+    generate_data(url, week)
     
-    return "Files generated. Check your email!"
+    return "Files generated!"
+
+
+@home.route("/email", methods=["GET", "POST"])
+@requires_auth
+def email():
+
+    week = int(request.form.get("week"))
+    
+    email_data(week)
+    
+    return "Files emailed!"

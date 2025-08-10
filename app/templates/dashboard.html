@@ -3,48 +3,82 @@
 {% block body %}
 
 
-  <div class="mt-10 flex flex-col w-full items-center">
+  <div class="flex flex-col justify-center w-full pt-10">
 
-    <form class="flex flex-col"
-      hx-post="/generate_data"
-      hx-swap="innerHTML"
-      hx-target="#submit-message"
-      hx-on::after-request="if (event.detail.successful && event.target === this) this.reset()"
-    >
+    <p class="text-3xl font-bold text-center text-pink-400">Dashboard</p>
 
-      <p class="text-xl font-bold text-center text-pink-400">Dashboard</p>
-      <p class="text-xl text-pink-400 font-md">The following will generate and send packing slips, labels, and shopping lists directly to your email</p>
+    <div class="mt-10 flex flex-row space-x-6 justify-center w-full items-start">
 
-      <input 
-        type="text" 
-        name="url"
-        placeholder="URL" 
-        class="border rounded-sm border-pink-400 focus:outline-none border-black mt-2 p-2"
-        autocomplete="off"
-        required
+      <form class="flex flex-col"
+        hx-post="/generate"
+        hx-swap="innerHTML"
+        hx-target="#submit-message-generate"
+        hx-on::after-request="if (event.detail.successful && event.target === this) this.reset()"
       >
 
-      <input 
-        type="number" 
-        name="week"
-        placeholder="Week" 
-        class="border rounded-sm border-pink-400 focus:outline-none border-black mt-2 p-2
-               outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-        autocomplete="off"
-        min=0
-        required
+        <p class="text-xl text-pink-400 font-md">Generate data for a given week</p>
+
+        <input 
+          type="text" 
+          name="url"
+          placeholder="URL" 
+          class="border rounded-sm border-pink-400 focus:outline-none border-black mt-2 p-2"
+          autocomplete="off"
+          required
+        >
+
+        <input 
+          type="number" 
+          name="week"
+          placeholder="Week" 
+          class="border rounded-sm border-pink-400 focus:outline-none border-black mt-2 p-2
+                outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+          autocomplete="off"
+          min=0
+          required
+        >
+
+        <button class="border-2 border-pink-400 text-pink-400 rounded-md border-black mt-2 p-2" type="submit">
+          Generate
+        </button>
+
+        <p id="submit-message-generate" class="text-pink-400 font-md"></p>
+
+      </form>
+
+      
+      <form class="flex flex-col"
+        hx-post="/email"
+        hx-swap="innerHTML"
+        hx-target="#submit-message-email"
+        hx-on::after-request="if (event.detail.successful && event.target === this) this.reset()"
       >
 
-      <button class="border-2 border-pink-400 text-pink-400 rounded-md border-black mt-2 p-2" type="submit">
-        Generate + Send
-      </button>
+        <p class="text-xl text-pink-400 font-md">Email yourself data from a given week</p>
 
-    </form>
+        <input 
+         type="number" 
+          name="week"
+          placeholder="Week" 
+          class="border rounded-sm border-pink-400 focus:outline-none border-black mt-2 p-2
+                outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+          autocomplete="off"
+          min=0
+          required
+        >
 
-      <p id="submit-message" class="text-pink-400 font-md"></p>
+        <button class="border-2 border-pink-400 text-pink-400 rounded-md border-black mt-2 p-2" type="submit">
+          Send
+        </button>
 
-  </div>
+        <p id="submit-message-email" class="text-pink-400 font-md"></p>
+
+      </form>
+
+
+    </div>
   
-
+  
+  </div>
 
 {% endblock %}
