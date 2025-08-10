@@ -58,8 +58,6 @@ def parse_url(url):
     return f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&gid={gid}"
 
 
-print(parse_url("https://docs.google.com/spreadsheets/d/14yTPn4sOEHLdj5qgRa4BFRFE_EhBwDVe/edit?gid=891988535#gid=891988535"))
-
 
 # TODO: Create Packing Slips - DONE
 def generate_packing_slips(week):
@@ -304,4 +302,25 @@ conn = sqlite3.connect("instance/prod.db")
 conn.row_factory = sqlite3.Row
 cur = conn.cursor()
 
-get_data("https://docs.google.com/spreadsheets/d/14yTPn4sOEHLdj5qgRa4BFRFE_EhBwDVe/edit?gid=891988535#gid=891988535", 4)
+# get_data("https://docs.google.com/spreadsheets/d/14yTPn4sOEHLdj5qgRa4BFRFE_EhBwDVe/edit?gid=891988535#gid=891988535", 4)
+
+# cur.execute('''CREATE TABLE IF NOT EXISTS user (
+#     id INTEGER PRIMARY KEY AUTOINCREMENT, 
+#     username TEXT NOT NULL, 
+#     password TEXT NOT NULL
+#     );
+# ''')
+# cur.execute('''INSERT INTO user (username, password) 
+#                 VALUES("sam_king", "asdf1234")''')
+
+
+data = cur.execute("SELECT * FROM user").fetchall()
+
+
+conn.commit()
+
+for d in data:
+    print(d["username"], d["password"])
+
+
+conn.close()
