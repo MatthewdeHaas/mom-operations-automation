@@ -1,6 +1,5 @@
 # TODO
 
-
 ### Clean up + Generalise
 - [x] Database tables should be named based on their week
 - [x] Functions that produce the tables should handle any sheet via the url
@@ -13,7 +12,7 @@
   - [x] routes.py
   - [x] static/
   - [x] templates/
-- [ ] Add back the html to pdf conversion
+- [x] Create PDF packing slips
 ### Hosting
 - [ ] Add 'mom-operations' as a subdomain to my personal website
 
