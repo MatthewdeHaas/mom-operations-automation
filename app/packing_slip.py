@@ -1,64 +1,69 @@
 from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
+from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Image, Spacer
 from reportlab.lib import colors
-from reportlab.lib.units import inch
-from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib.units import inch
+
 
 def create_packing_slip(filename, client, date, orders):
-
+    # Create PDF
     doc = SimpleDocTemplate(filename, pagesize=letter,
-                            rightMargin=40, leftMargin=40,
-                            topMargin=40, bottomMargin=40)
-
+                            rightMargin=30, leftMargin=30,
+                            topMargin=30, bottomMargin=30)
+    
     styles = getSampleStyleSheet()
     style_normal = styles["Normal"]
     style_heading = styles["Heading1"]
 
+
     elements = []
 
-    # Title
-    elements.append(Paragraph("Packing Slip", style_heading))
-    elements.append(Spacer(1, 12))
+    logo = Image("app/static/images/mom-logo.png", width=1.5*inch, height=1.5*inch)
+    elements.append(logo)
 
-    # Client and date info
-    elements.append(Paragraph(f"<b>Client:</b> {client}", style_normal))
-    elements.append(Paragraph(f"<b>Shipment Date:</b> {date}", style_normal))
-    elements.append(Spacer(1, 12))
+    company_paragraph = Paragraph(
+        f"<b>{company_info['name']}</b><br/>{company_info['address']}<br/>{company_info['phone']}",
+        style_normal,
+    )
+    elements.append(company_paragraph)
+
+    elements.append(Spacer(1, 0.2*inch))
+    elements.append(Paragraph("<b>Packing Slip</b>", styles['Heading1']))
+    elements.append(Spacer(1, 0.2*inch))
 
     # Table data
-    data = [
-        ["Serving Date", "Item", "Meal", "Day", "Order Amount", "Client", "Quantity Shipped"]
-    ]
-
-    # Add rows
+    data = [["Customer", "Serving Date", "Item", "Order Amount"]] 
+    # Wrap long text inside cells
     for order in orders:
-        data.append([
-                order.get("Serving Date", "") or "",
-                order.get("Item", "") or "",
-                order.get("Meal", "") or "",
-                order.get("Day", "") or "",
-                order.get("Order Amount", "") or "",
-                order.get("Client", "") or "",
-                order.get("Quantity to Produce/Ship", "") or ""
-        ])
+        row = [
+            Paragraph(str(order["Customer"]), styles['Normal']),
+            Paragraph(str(order["Serving Date"]), styles['Normal']),
+            Paragraph(str(order["Item"]), styles['Normal']),
+            Paragraph(str(order["Order Amount"]), styles['Normal']),
+        ]
+        data.append(row)
 
-    # Create table with style
-    table = Table(data, repeatRows=1, hAlign='LEFT')
+    # Shrink column widths to fit page
+    col_widths = [1*inch, 0.9*inch, 1.2*inch, 0.9*inch, 0.5*inch,
+                  1*inch, 0.8*inch, 1.2*inch, 1.2*inch, 1*inch]
+
+    # Create table
+    table = Table(data, colWidths=col_widths)
     table.setStyle(TableStyle([
         ('BACKGROUND', (0,0), (-1,0), colors.grey),
-        ('TEXTCOLOR',(0,0),(-1,0),colors.whitesmoke),
-
-        ('ALIGN',(0,0),(-1,-1),'CENTER'),
+        ('TEXTCOLOR', (0,0), (-1,0), colors.whitesmoke),
+        ('ALIGN', (0,0), (-1,-1), 'CENTER'),
         ('FONTNAME', (0,0), (-1,0), 'Helvetica-Bold'),
-        ('FONTSIZE', (0,0), (-1,0), 10),
-
-        ('BOTTOMPADDING', (0,0), (-1,0), 12),
-
-        ('GRID', (0,0), (-1,-1), 1, colors.black),
+        ('FONTSIZE', (0,0), (-1,0), 9),
+        ('FONTSIZE', (0,1), (-1,-1), 8),
+        ('BOTTOMPADDING', (0,0), (-1,0), 6),
+        ('GRID', (0,0), (-1,-1), 0.25, colors.black),
+        ('VALIGN', (0,0), (-1,-1), 'TOP'),  # Ensure wrapping works vertically
     ]))
 
+
     elements.append(table)
-    elements.append(Spacer(1, 36))
 
     # Signature section
     elements.append(Paragraph("<b>Packed By:</b> ____________________________", style_normal))
@@ -68,14 +73,11 @@ def create_packing_slip(filename, client, date, orders):
     elements.append(Paragraph("<i>Print Name:</i>", style_normal))
     elements.append(Paragraph("<i>Signature:</i>", style_normal))
 
-    # Build PDF
     doc.build(elements)
 
-# Example usage:
-orders = [
-    {'Serving Date': '2025-08-10', 'Item': 'Chicken', 'Meal': 'Lunch', 'Day': 'Monday',
-     'Order Amount': 3, 'Client': 'ABC Corp', 'Quantity to Produce/Ship': 3},
-    {'Serving Date': '2025-08-11', 'Item': 'Beef', 'Meal': 'Dinner', 'Day': 'Tuesday',
-     'Order Amount': 2, 'Client': 'ABC Corp', 'Quantity to Produce/Ship': 2},
-]
 
+company_info = {
+    "name": "Meals On The Move",
+    "address": "46 Hollinger Rd, Toronto ON M4B 3G5",
+    "phone": "1-866-456-2121",
+}
