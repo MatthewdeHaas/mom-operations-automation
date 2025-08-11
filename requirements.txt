@@ -39,6 +39,7 @@ pyparsing==3.2.1
 pyphen==0.17.2
 python-dateutil==2.9.0.post0
 pytz==2025.2
+reportlab==4.4.3
 requests==2.32.4
 requests-oauthlib==2.0.0
 rsa==4.9.1

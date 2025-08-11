@@ -7,8 +7,8 @@ import html
 from datetime import datetime
 import os
 import shutil
-# from weasyprint import HTML
 from app.db import get_db
+from app.packing_slip import create_packing_slip
 
 
 # Create a new table for the repsonse named after the given week
@@ -87,7 +87,7 @@ def generate_packing_slips(week):
 
         orders = cur.execute(f'''
         SELECT 
-        "Customer", "Serving Date", "Item", "Meal", "Day", "Order Amount", "Quantity", Client, "Quantity to Produce/Ship", "Shipment Date" 
+        "Customer", "Serving Date", "Item", "Meal", "Day", "Order Amount", "Client", "Quantity to Produce/Ship", "Shipment Date" 
         FROM week_{week}
         WHERE Customer = ?''', (customer, )).fetchall()
 
@@ -98,135 +98,19 @@ def generate_packing_slips(week):
 
         # Order the dates from least to most recent (could fail if the single digit days are entered as one digit)
         order_dates = sorted(order_dates, key=lambda d: datetime.strptime(d, "%d/%b/%y"))
-
+        # print(f"\n\n\n{customer}: {order_dates}\n\n\n")
 
         # Create as many packing slips as there are unique dates
-        for date in order_dates:
+        for i, date in enumerate(order_dates):
 
-            # Create the html template for the packing slips
-            template = Template("""
-
-                <!DOCTYPE html>
-                <html>
-                <head>
-                    <meta charset="UTF-8">
-                    <title>Packing Slip</title>
-                    <style>
-                        body {
-                            font-family: Arial, sans-serif;
-                            margin: 40px;
-                        }
-                        h1 {
-                            text-align: center;
-                        }
-                        table {
-                            border-collapse: collapse;
-                            width: 100%;
-                            margin-top: 20px;
-                        }
-                        th, td {
-                            border: 1px solid #000;
-                            padding: 8px;
-                        }
-                        .footer {
-                            margin-top: 50px;
-                        }
-                        .signature-box {
-                            margin-top: 40px;
-                        }
-                        .signature-line {
-                            width: 300px;
-                            border-bottom: 1px solid #000;
-                            margin-bottom: 5px;
-                        }
-                        .note-box {
-                            border: 1px solid #aaa;
-                            padding: 10px;
-                            margin-top: 20px;
-                            background-color: #f9f9f9;
-                        }
-                    </style>
-                </head>
-                <body>
-
-                    <h1>Packing Slip</h1>
-
-                    <p><strong>Client:</strong> {{ client }}</p>
-                    <p><strong>Shipment Date:</strong> {{ date }}</p>
-
-
-                    <table border="1" cellpadding="5">
-
-                        <tr>
-                            <th>Serving Date</th>
-
-                            <th>Item</th>
-
-                            <th>Meal</th>
-
-                            <th>Day</th>
-
-                            <th>Order Amount</th>
-
-                            <th>Client</th>
-
-                            <th>Quantity Shipped</th>
-                        </tr>
-                            {% for order in orders %}
-                                <tr>    
-                                    <td>{{ order['Serving Date'] or '' }}</td>
-
-                                    <td>{{ order['Item'] or '' }}</td>
-
-                                    <td>{{ order['Meal'] or '' }}
-
-                                    <td>{{ order['Day'] or '' }}
-
-                                    <td>{{ order['Order Amount'] or '' }}
-
-                                    <td>{{ order['Client'] or '' }}
-
-                                    <td>{{ order['Quantity to Produce/Ship'] or '' }}
-                                    </td>
-                                </tr>
-                            {% endfor %}
-                    </table>
-
-
-                    <div class="footer">
-                        <div class="signature-box">
-                            <p><strong>Packed By:</strong> ____________________________</p>
-                            <p><strong>Checked By:</strong> ____________________________</p>
-                            <p><strong>Date:</strong> ____________________________</p>
-                            <div class="signature-line"></div>
-                            <p><em>Print Name:</em></p>
-                            <p><em>Signature:</em></p>
-                        </div>
-                    </div>
-
-                </body>
-                </html>
-
-            """)
-
-            # Convert the template to html
-            html = template.render(
-                client=customer,
-                date=date,
-                orders=list(filter(lambda o: o["Shipment Date"] == date, orders))
-            )
-
-
-            # Write html data to an html file  
             os.makedirs(f"data/week_{week}/{customer}", exist_ok=True)
             os.makedirs(f"data/week_{week}/{customer}/packing_slips", exist_ok=True)
 
+            filtered_orders = list(filter(lambda o: o["Shipment Date"] == date, orders))
 
-            # HTML(string=html).write_pdf(f"data/{customer}/packing_slips/{customer}_{str(date.replace('/', '_'))}.pdf")
+            # Create packing slips
+            create_packing_slip(f"data/week_{week}/{customer}/packing_slips/{customer}_{str(date.replace('/', '_'))}.pdf", customer, date, filtered_orders)
 
-
-            with open(f"data/week_{week}/{customer}/packing_slips/{customer}_{str(date.replace('/', '_'))}.html", "w") as f:
-                f.write(html)
 
 def generate_labels(week):
 
