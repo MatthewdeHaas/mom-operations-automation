@@ -10,10 +10,15 @@
     <div class="mt-10 flex flex-row space-x-6 justify-center w-full items-start">
 
       <form class="flex flex-col"
-        hx-post="/generate"
-        hx-swap="innerHTML"
-        hx-target="#submit-message-generate"
-        hx-on::after-request="if (event.detail.successful && event.target === this) this.reset()"
+            hx-post="/generate"
+            hx-swap="innerHTML"
+            hx-target="#submit-message-download"
+            hx-on::before-request="showSpinner();"
+            hx-on::after-request="if (event.detail.successful && event.target === this){
+            hideSpinner();
+            download();
+            this.reset();
+            }"
       >
 
         <p class="text-xl text-pink-400 font-md">Generate data for a given week</p>
@@ -38,47 +43,31 @@
           required
         >
 
-        <button class="border-2 border-pink-400 text-pink-400 rounded-md border-black mt-2 p-2" type="submit">
-          Generate
-        </button>
-
-        <p id="submit-message-generate" class="text-pink-400 font-md"></p>
-
-      </form>
-
-      
-      <form class="flex flex-col"
-        hx-post="/email"
-        hx-swap="innerHTML"
-        hx-target="#submit-message-email"
-        hx-on::after-request="if (event.detail.successful && event.target === this) this.reset()"
-      >
-
-        <p class="text-xl text-pink-400 font-md">Email yourself data from a given week</p>
-
-        <input 
-         type="number" 
-          name="week"
-          placeholder="Week" 
-          class="border rounded-sm border-pink-400 focus:outline-none border-black mt-2 p-2
-                outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-          autocomplete="off"
-          min=0
-          required
-        >
+        <div class="flex flex-row my-2">
+          <input 
+          type="checkbox"
+          name="email"
+          id="email"
+          class="accent-pink-400"
+          >
+          <label for="email" class="ml-4">Share to Email</label>
+        </div>
 
         <button class="border-2 border-pink-400 text-pink-400 rounded-md border-black mt-2 p-2" type="submit">
-          Send
+          Download
         </button>
 
-        <p id="submit-message-email" class="text-pink-400 font-md"></p>
+        <p id="submit-message-download" class="text-pink-400 font-md"></p>
+        <div id="loading" class="flex flex-col hidden justify-center items-center w-full pt-4">
+          <div class="w-8 h-8 border-4 border-blue-500 border-dashed rounded-full animate-spin"></div>
+        </div>
 
       </form>
-
 
     </div>
   
   
   </div>
+
 
 {% endblock %}

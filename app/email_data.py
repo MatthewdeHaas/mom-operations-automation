@@ -6,12 +6,12 @@ import os
 
 SCOPES = ['https://www.googleapis.com/auth/drive']
 
-def upload_and_share(file_path, share_email):
+def email_data(file_path, share_email=None):
     creds = None
     if os.path.exists('token.json'):
         creds = Credentials.from_authorized_user_file('token.json', SCOPES)
     else:
-        flow = InstalledAppFlow.from_client_secrets_file('credentials.json', SCOPES)
+        flow = InstalledAppFlow.from_client_secrets_file('app/credentials.json', SCOPES)
         creds = flow.run_local_server(port=0)
         with open('token.json', 'w') as token:
             token.write(creds.to_json())
@@ -20,28 +20,25 @@ def upload_and_share(file_path, share_email):
 
     # Upload the file
     file_metadata = {'name': os.path.basename(file_path)}
-    media = MediaFileUpload(file_path, resumable=True)
+    media = MediaFileUpload(file_path, mimetype='application/zip', resumable=True)
     file = service.files().create(body=file_metadata, media_body=media, fields='id').execute()
     file_id = file.get('id')
 
     print(f"Uploaded file ID: {file_id}")
 
     # Share the file with the given email
-    permission = {
-        'type': 'user',
-        'role': 'reader',  # Use 'writer' if you want to allow editing
-        'emailAddress': share_email
-    }
+    if share_email is not None:
+        permission = {
+            'type': 'user',
+            'role': 'writer', 
+            'emailAddress': share_email
+        }
 
-    service.permissions().create(
-        fileId=file_id,
-        body=permission,
-        sendNotificationEmail=True,  # Optional: notify the user by email
-        fields='id'
-    ).execute()
+        service.permissions().create(
+            fileId=file_id,
+            body=permission,
+            sendNotificationEmail=True,  # Optional: notify the user by email
+            fields='id'
+        ).execute()
 
     print(f"Shared file with {share_email}")
-
-
-def email_data(week):
-    print("\n\n\nhere\n\n\n")

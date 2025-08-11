@@ -6,6 +6,7 @@ from jinja2 import Template
 import html
 from datetime import datetime
 import os
+import shutil
 # from weasyprint import HTML
 from app.db import get_db
 
@@ -22,7 +23,8 @@ def add_week(url, week):
 
     # Store .csv response locally
     os.makedirs("data", exist_ok=True)
-    with open(f"data/week_{week}.csv", "wb") as f:
+    os.makedirs(f"data/week_{week}", exist_ok=True)
+    with open(f"data/week_{week}/week_{week}.csv", "wb") as f:
         f.write(response.content)
 
 
@@ -48,7 +50,7 @@ def add_week(url, week):
     """)
 
     # Convert .csv format to .sql
-    df = pd.read_csv(f"data/week_{week}.csv")
+    df = pd.read_csv(f"data/week_{week}/week_{week}.csv")
     df.to_sql(f"week_{week}", db, if_exists="replace", index=False)
    
     db.commit()
@@ -216,14 +218,14 @@ def generate_packing_slips(week):
 
 
             # Write html data to an html file  
-            os.makedirs(f"data/{customer}", exist_ok=True)
-            os.makedirs(f"data/{customer}/packing_slips", exist_ok=True)
+            os.makedirs(f"data/week_{week}/{customer}", exist_ok=True)
+            os.makedirs(f"data/week_{week}/{customer}/packing_slips", exist_ok=True)
 
 
             # HTML(string=html).write_pdf(f"data/{customer}/packing_slips/{customer}_{str(date.replace('/', '_'))}.pdf")
 
 
-            with open(f"data/{customer}/packing_slips/{customer}_{str(date.replace('/', '_'))}.html", "w") as f:
+            with open(f"data/week_{week}/{customer}/packing_slips/{customer}_{str(date.replace('/', '_'))}.html", "w") as f:
                 f.write(html)
 
 def generate_labels(week):
@@ -268,7 +270,7 @@ def generate_labels(week):
         df.insert(loc=len(list(df.columns)), column=None, value="# ____ of ____")
 
         # Export to excel
-        df.to_excel(f"data/{customer}/{str(customer.replace('/', '_'))}_labels.xlsx", index=False)
+        df.to_excel(f"data/week_{week}/{customer}/{str(customer.replace('/', '_'))}_labels.xlsx", index=False)
 
 
 
@@ -296,8 +298,7 @@ def generate_shopping_list(week):
     
     # Export as .xlsx
     df = pd.DataFrame({'Item': foods.keys(), 'Quantity': foods.values()})
-    df.to_excel(f"data/shopping_list.xlsx", index=False)
-
+    df.to_excel(f"data/week_{week}/shopping_list.xlsx", index=False)
 
 
 def generate_data(url, week):
@@ -309,6 +310,9 @@ def generate_data(url, week):
     generate_packing_slips(week)
     generate_labels(week)
     generate_shopping_list(week)
+
+    # Zip the data folder
+    shutil.make_archive(f"data/week_{week}", "zip", f"data/week_{week}")    
 
 
 

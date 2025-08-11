@@ -1,7 +1,8 @@
-from flask import Blueprint, url_for, render_template, render_template_string, session, request, redirect, make_response, current_app
+from flask import Blueprint, url_for, render_template, render_template_string, session, request, redirect, make_response, current_app, send_file
 from app.db import get_db
 import json
 from functools import wraps
+import os
 from app.preprocess_data import generate_data
 from app.email_data import email_data
 
@@ -67,18 +68,25 @@ def generate():
 
     url = request.form.get("url")
     week = int(request.form.get("week"))
-    
+
     generate_data(url, week)
-    
-    return "Files generated!"
+
+    # TODO: Uncomment and replace in production
+    if "email" in request.form:
+        # email_data(f"data/week_{week}", "sam@mealsonthemove.ca")
+        email_data(f"data/week_{week}.zip")
+        return "Files Generated and shared with your email!"
+
+    return "Files Generated!"
 
 
-@home.route("/email", methods=["GET", "POST"])
+@home.route("/download/<week>", methods=["GET", "POST"])
 @requires_auth
-def email():
+def download(week):
 
-    week = int(request.form.get("week"))
-    
-    email_data(week)
-    
-    return "Files emailed!"
+    basedir = os.path.abspath(os.path.dirname(__file__))
+    file_path = os.path.join(basedir, "..", "data", f"week_{week}.zip")
+    file_path = os.path.normpath(file_path) 
+
+    return send_file(file_path, as_attachment=True, download_name=f"week_{week}.zip")
+
