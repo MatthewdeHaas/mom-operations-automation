@@ -101,7 +101,7 @@ def generate_packing_slips(week):
         # print(f"\n\n\n{customer}: {order_dates}\n\n\n")
 
         # Create as many packing slips as there are unique dates
-        for date order_dates:
+        for date in order_dates:
 
             os.makedirs(f"data/week_{week}/{customer}", exist_ok=True)
             os.makedirs(f"data/week_{week}/{customer}/packing_slips", exist_ok=True)
